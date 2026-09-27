@@ -1,0 +1,517 @@
+{
+  "standard": {
+    "config": {
+      "users": 500,
+      "turns": 240,
+      "seed": 31,
+      "noise_rate": 0.1,
+      "implicit_rate": 0.22,
+      "temporary_rate": 0.24,
+      "query_every": 24,
+      "behavior_noise_rate": 0.22,
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "fa",
+        "zh"
+      ]
+    },
+    "evaluation": {
+      "action_threshold": 0.7,
+      "defer_cost": 0.1
+    },
+    "results": {
+      "first-mention": {
+        "accuracy": 0.6342962962962962,
+        "coverage": 1.0,
+        "selective_accuracy": 0.6342962962962962,
+        "decision_utility": 0.2685925925925926,
+        "ask_rate": 0.0,
+        "brier": 0.3657037037037037,
+        "queries": 13500,
+        "slices": {
+          "general": 0.6363432165318957,
+          "temporary": 0.4444444444444444
+        }
+      },
+      "latest-observation": {
+        "accuracy": 0.4806666666666667,
+        "coverage": 1.0,
+        "selective_accuracy": 0.4806666666666667,
+        "decision_utility": -0.03866666666666667,
+        "ask_rate": 0.0,
+        "brier": 0.5193333333333333,
+        "queries": 13500,
+        "slices": {
+          "general": 0.4752171308775082,
+          "temporary": 0.9861111111111112
+        }
+      },
+      "sliding-window-40": {
+        "accuracy": 0.24851851851851853,
+        "coverage": 0.5796296296296296,
+        "selective_accuracy": 0.42875399361022365,
+        "decision_utility": -0.12462962962962963,
+        "ask_rate": 0.4203703703703704,
+        "brier": 0.33111111111111113,
+        "queries": 13500,
+        "slices": {
+          "general": 0.24056603773584906,
+          "temporary": 0.9861111111111112
+        }
+      },
+      "trusted-latest": {
+        "accuracy": 0.8528888888888889,
+        "coverage": 0.6313333333333333,
+        "selective_accuracy": 0.9080136102311392,
+        "decision_utility": 0.47831851851851853,
+        "ask_rate": 0.36866666666666664,
+        "brier": 0.1290757925925926,
+        "queries": 13500,
+        "slices": {
+          "general": 0.8514525306978137,
+          "temporary": 0.9861111111111112
+        }
+      },
+      "time-aware-latest": {
+        "accuracy": 0.906074074074074,
+        "coverage": 0.6113333333333333,
+        "selective_accuracy": 1.0,
+        "decision_utility": 0.5724666666666667,
+        "ask_rate": 0.38866666666666666,
+        "brier": 0.07968082962962963,
+        "queries": 13500,
+        "slices": {
+          "general": 0.9050613956274334,
+          "temporary": 1.0
+        }
+      },
+      "personal-belief-state": {
+        "accuracy": 0.9316296296296296,
+        "coverage": 0.8242962962962963,
+        "selective_accuracy": 0.9766355140186916,
+        "decision_utility": 0.7682074074074073,
+        "ask_rate": 0.1757037037037037,
+        "brier": 0.06032212641752271,
+        "queries": 13500,
+        "slices": {
+          "general": 0.9311919736448039,
+          "temporary": 0.9722222222222222
+        }
+      }
+    }
+  },
+  "high_noise": {
+    "config": {
+      "users": 250,
+      "turns": 240,
+      "seed": 32,
+      "noise_rate": 0.28,
+      "implicit_rate": 0.22,
+      "temporary_rate": 0.24,
+      "query_every": 24,
+      "behavior_noise_rate": 0.22,
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "fa",
+        "zh"
+      ]
+    },
+    "evaluation": {
+      "action_threshold": 0.7,
+      "defer_cost": 0.1
+    },
+    "results": {
+      "first-mention": {
+        "accuracy": 0.5715555555555556,
+        "coverage": 1.0,
+        "selective_accuracy": 0.5715555555555556,
+        "decision_utility": 0.1431111111111111,
+        "ask_rate": 0.0,
+        "brier": 0.42844444444444446,
+        "queries": 6750,
+        "slices": {
+          "general": 0.5729916067146283,
+          "temporary": 0.44871794871794873
+        }
+      },
+      "latest-observation": {
+        "accuracy": 0.25022222222222223,
+        "coverage": 1.0,
+        "selective_accuracy": 0.25022222222222223,
+        "decision_utility": -0.49955555555555553,
+        "ask_rate": 0.0,
+        "brier": 0.7497777777777778,
+        "queries": 6750,
+        "slices": {
+          "general": 0.24160671462829736,
+          "temporary": 0.9871794871794872
+        }
+      },
+      "sliding-window-40": {
+        "accuracy": 0.18192592592592594,
+        "coverage": 0.801037037037037,
+        "selective_accuracy": 0.22711300166450896,
+        "decision_utility": -0.45708148148148153,
+        "ask_rate": 0.19896296296296295,
+        "brier": 0.6191111111111111,
+        "queries": 6750,
+        "slices": {
+          "general": 0.17251199040767387,
+          "temporary": 0.9871794871794872
+        }
+      },
+      "trusted-latest": {
+        "accuracy": 0.857925925925926,
+        "coverage": 0.6164444444444445,
+        "selective_accuracy": 0.9130016822879116,
+        "decision_utility": 0.4708296296296296,
+        "ask_rate": 0.38355555555555554,
+        "brier": 0.12653371851851852,
+        "queries": 6750,
+        "slices": {
+          "general": 0.8562649880095923,
+          "temporary": 1.0
+        }
+      },
+      "time-aware-latest": {
+        "accuracy": 0.9082962962962963,
+        "coverage": 0.5977777777777777,
+        "selective_accuracy": 1.0,
+        "decision_utility": 0.5575555555555556,
+        "ask_rate": 0.4022222222222222,
+        "brier": 0.08067564444444444,
+        "queries": 6750,
+        "slices": {
+          "general": 0.9072242206235012,
+          "temporary": 1.0
+        }
+      },
+      "personal-belief-state": {
+        "accuracy": 0.9217777777777778,
+        "coverage": 0.8063703703703704,
+        "selective_accuracy": 0.968583501745361,
+        "decision_utility": 0.7363407407407407,
+        "ask_rate": 0.19362962962962962,
+        "brier": 0.06948409487677353,
+        "queries": 6750,
+        "slices": {
+          "general": 0.920863309352518,
+          "temporary": 1.0
+        }
+      }
+    }
+  },
+  "implicit_heavy": {
+    "config": {
+      "users": 250,
+      "turns": 240,
+      "seed": 33,
+      "noise_rate": 0.1,
+      "implicit_rate": 0.55,
+      "temporary_rate": 0.24,
+      "query_every": 24,
+      "behavior_noise_rate": 0.22,
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "fa",
+        "zh"
+      ]
+    },
+    "evaluation": {
+      "action_threshold": 0.7,
+      "defer_cost": 0.1
+    },
+    "results": {
+      "first-mention": {
+        "accuracy": 0.6251851851851852,
+        "coverage": 1.0,
+        "selective_accuracy": 0.6251851851851852,
+        "decision_utility": 0.25037037037037035,
+        "ask_rate": 0.0,
+        "brier": 0.3748148148148148,
+        "queries": 6750,
+        "slices": {
+          "general": 0.6282338866457305,
+          "temporary": 0.30158730158730157
+        }
+      },
+      "latest-observation": {
+        "accuracy": 0.5552592592592592,
+        "coverage": 1.0,
+        "selective_accuracy": 0.5552592592592592,
+        "decision_utility": 0.11051851851851852,
+        "ask_rate": 0.0,
+        "brier": 0.4447407407407407,
+        "queries": 6750,
+        "slices": {
+          "general": 0.5513683266038583,
+          "temporary": 0.9682539682539683
+        }
+      },
+      "sliding-window-40": {
+        "accuracy": 0.36918518518518517,
+        "coverage": 0.6994074074074074,
+        "selective_accuracy": 0.5278542681635247,
+        "decision_utility": 0.008903703703703704,
+        "ask_rate": 0.3005925925925926,
+        "brier": 0.3302222222222222,
+        "queries": 6750,
+        "slices": {
+          "general": 0.3635411993420069,
+          "temporary": 0.9682539682539683
+        }
+      },
+      "trusted-latest": {
+        "accuracy": 0.8205925925925925,
+        "coverage": 0.36844444444444446,
+        "selective_accuracy": 0.895858464012867,
+        "decision_utility": 0.22854814814814817,
+        "ask_rate": 0.6315555555555555,
+        "brier": 0.16093718518518518,
+        "queries": 6750,
+        "slices": {
+          "general": 0.8192014356213548,
+          "temporary": 0.9682539682539683
+        }
+      },
+      "time-aware-latest": {
+        "accuracy": 0.8545185185185186,
+        "coverage": 0.3457777777777778,
+        "selective_accuracy": 1.0,
+        "decision_utility": 0.2803555555555556,
+        "ask_rate": 0.6542222222222223,
+        "brier": 0.12997219259259257,
+        "queries": 6750,
+        "slices": {
+          "general": 0.8531478989083296,
+          "temporary": 1.0
+        }
+      },
+      "personal-belief-state": {
+        "accuracy": 0.8751111111111111,
+        "coverage": 0.8460740740740741,
+        "selective_accuracy": 0.9257573104535107,
+        "decision_utility": 0.7050518518518519,
+        "ask_rate": 0.15392592592592594,
+        "brier": 0.08870714502597479,
+        "queries": 6750,
+        "slices": {
+          "general": 0.8749813070136085,
+          "temporary": 0.8888888888888888
+        }
+      }
+    }
+  },
+  "temporary_heavy": {
+    "config": {
+      "users": 250,
+      "turns": 240,
+      "seed": 34,
+      "noise_rate": 0.1,
+      "implicit_rate": 0.22,
+      "temporary_rate": 0.6,
+      "query_every": 24,
+      "behavior_noise_rate": 0.22,
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "fa",
+        "zh"
+      ]
+    },
+    "evaluation": {
+      "action_threshold": 0.7,
+      "defer_cost": 0.1
+    },
+    "results": {
+      "first-mention": {
+        "accuracy": 0.6211851851851852,
+        "coverage": 1.0,
+        "selective_accuracy": 0.6211851851851852,
+        "decision_utility": 0.24237037037037037,
+        "ask_rate": 0.0,
+        "brier": 0.3788148148148148,
+        "queries": 6750,
+        "slices": {
+          "general": 0.6304945054945055,
+          "temporary": 0.31313131313131315
+        }
+      },
+      "latest-observation": {
+        "accuracy": 0.44814814814814813,
+        "coverage": 1.0,
+        "selective_accuracy": 0.44814814814814813,
+        "decision_utility": -0.1037037037037037,
+        "ask_rate": 0.0,
+        "brier": 0.5518518518518518,
+        "queries": 6750,
+        "slices": {
+          "general": 0.4323870573870574,
+          "temporary": 0.9696969696969697
+        }
+      },
+      "sliding-window-40": {
+        "accuracy": 0.2388148148148148,
+        "coverage": 0.596,
+        "selective_accuracy": 0.40069599801143424,
+        "decision_utility": -0.15877037037037037,
+        "ask_rate": 0.404,
+        "brier": 0.35718518518518516,
+        "queries": 6750,
+        "slices": {
+          "general": 0.21672771672771673,
+          "temporary": 0.9696969696969697
+        }
+      },
+      "trusted-latest": {
+        "accuracy": 0.7571851851851852,
+        "coverage": 0.6877037037037037,
+        "selective_accuracy": 0.7475226195605342,
+        "decision_utility": 0.3092148148148148,
+        "ask_rate": 0.3122962962962963,
+        "brier": 0.22211308148148148,
+        "queries": 6750,
+        "slices": {
+          "general": 0.7509157509157509,
+          "temporary": 0.9646464646464646
+        }
+      },
+      "time-aware-latest": {
+        "accuracy": 0.9202962962962963,
+        "coverage": 0.6299259259259259,
+        "selective_accuracy": 1.0,
+        "decision_utility": 0.5929185185185185,
+        "ask_rate": 0.37007407407407406,
+        "brier": 0.07307291851851852,
+        "queries": 6750,
+        "slices": {
+          "general": 0.9178876678876678,
+          "temporary": 1.0
+        }
+      },
+      "personal-belief-state": {
+        "accuracy": 0.934962962962963,
+        "coverage": 0.8260740740740741,
+        "selective_accuracy": 0.9784791965566715,
+        "decision_utility": 0.773125925925926,
+        "ask_rate": 0.17392592592592593,
+        "brier": 0.05897961125872892,
+        "queries": 6750,
+        "slices": {
+          "general": 0.9337606837606838,
+          "temporary": 0.9747474747474747
+        }
+      }
+    }
+  },
+  "long_horizon": {
+    "config": {
+      "users": 180,
+      "turns": 800,
+      "seed": 35,
+      "noise_rate": 0.1,
+      "implicit_rate": 0.22,
+      "temporary_rate": 0.24,
+      "query_every": 50,
+      "behavior_noise_rate": 0.22,
+      "languages": [
+        "en",
+        "es",
+        "fr",
+        "fa",
+        "zh"
+      ]
+    },
+    "evaluation": {
+      "action_threshold": 0.7,
+      "defer_cost": 0.1
+    },
+    "results": {
+      "first-mention": {
+        "accuracy": 0.6782407407407407,
+        "coverage": 1.0,
+        "selective_accuracy": 0.6782407407407407,
+        "decision_utility": 0.35648148148148145,
+        "ask_rate": 0.0,
+        "brier": 0.32175925925925924,
+        "queries": 8640,
+        "slices": {
+          "general": 0.6793131453764938,
+          "temporary": 0.23809523809523808
+        }
+      },
+      "latest-observation": {
+        "accuracy": 0.35462962962962963,
+        "coverage": 1.0,
+        "selective_accuracy": 0.35462962962962963,
+        "decision_utility": -0.29074074074074074,
+        "ask_rate": 0.0,
+        "brier": 0.6453703703703704,
+        "queries": 8640,
+        "slices": {
+          "general": 0.3530571992110454,
+          "temporary": 1.0
+        }
+      },
+      "sliding-window-40": {
+        "accuracy": 0.1744212962962963,
+        "coverage": 0.5085648148148149,
+        "selective_accuracy": 0.3429676832043696,
+        "decision_utility": -0.20886574074074074,
+        "ask_rate": 0.4914351851851852,
+        "brier": 0.33414351851851853,
+        "queries": 8640,
+        "slices": {
+          "general": 0.17240979231929457,
+          "temporary": 1.0
+        }
+      },
+      "trusted-latest": {
+        "accuracy": 0.8200231481481481,
+        "coverage": 0.2969907407407407,
+        "selective_accuracy": 0.9049103663289166,
+        "decision_utility": 0.17020833333333332,
+        "ask_rate": 0.7030092592592593,
+        "brier": 0.16104813657407407,
+        "queries": 8640,
+        "slices": {
+          "general": 0.8195846385891635,
+          "temporary": 1.0
+        }
+      },
+      "time-aware-latest": {
+        "accuracy": 0.8443287037037037,
+        "coverage": 0.2795138888888889,
+        "selective_accuracy": 1.0,
+        "decision_utility": 0.2074652777777778,
+        "ask_rate": 0.7204861111111112,
+        "brier": 0.13842797453703706,
+        "queries": 8640,
+        "slices": {
+          "general": 0.8439494140851607,
+          "temporary": 1.0
+        }
+      },
+      "personal-belief-state": {
+        "accuracy": 0.8309027777777778,
+        "coverage": 0.6180555555555556,
+        "selective_accuracy": 0.9374531835205993,
+        "decision_utility": 0.5025462962962963,
+        "ask_rate": 0.3819444444444444,
+        "brier": 0.12125100221676374,
+        "queries": 8640,
+        "slices": {
+          "general": 0.8304907761921336,
+          "temporary": 1.0
+        }
+      }
+    }
+  }
+}

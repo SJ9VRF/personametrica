@@ -1,0 +1,6 @@
+{"id":"fixture-01","generator":"fixture","has_evolved":true,"correct_letter":"B","predicted_letter":"A","correct":false,"confidence":0.62}
+{"id":"fixture-02","generator":"fixture","has_evolved":true,"correct_letter":"C","predicted_letter":"C","correct":true,"confidence":0.79}
+{"id":"fixture-03","generator":"fixture","has_evolved":false,"correct_letter":"A","predicted_letter":"A","correct":true,"confidence":0.88}
+{"id":"fixture-04","generator":"fixture","has_evolved":false,"correct_letter":"D","predicted_letter":"B","correct":false,"confidence":0.68}
+{"id":"fixture-05","generator":"fixture","has_evolved":true,"correct_letter":"E","predicted_letter":"E","correct":true,"confidence":0.73}
+{"id":"fixture-06","generator":"fixture","has_evolved":false,"correct_letter":"B","predicted_letter":"B","correct":true,"confidence":0.84}

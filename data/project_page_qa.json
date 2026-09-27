@@ -1,0 +1,544 @@
+{
+  "page": "project/index.html",
+  "version": "4.1.0",
+  "checks": {
+    "doctype": {
+      "passed": true,
+      "detail": "HTML5 doctype required"
+    },
+    "title": {
+      "passed": true,
+      "detail": "PersonaMetrica title missing"
+    },
+    "public_author": {
+      "passed": true,
+      "detail": "public author must be Aura Yavary"
+    },
+    "description": {
+      "passed": true,
+      "detail": "research description missing"
+    },
+    "viewport": {
+      "passed": true,
+      "detail": "viewport missing"
+    },
+    "og": {
+      "passed": true,
+      "detail": "Open Graph incomplete"
+    },
+    "twitter": {
+      "passed": true,
+      "detail": "Twitter metadata incomplete"
+    },
+    "json_ld": {
+      "passed": true,
+      "detail": "JSON-LD name/author/version mismatch"
+    },
+    "hero_brand": {
+      "passed": true,
+      "detail": "hero missing PersonaMetrica"
+    },
+    "hero_protocol_question": {
+      "passed": true,
+      "detail": "hero missing evaluation protocols"
+    },
+    "hero_protocol_sensitive": {
+      "passed": true,
+      "detail": "hero missing protocol-sensitive"
+    },
+    "hero_seed_resampling": {
+      "passed": true,
+      "detail": "hero missing seed resampling"
+    },
+    "hero_bootstrap_point": {
+      "passed": true,
+      "detail": "hero missing 51.6%"
+    },
+    "hero_bootstrap_interval": {
+      "passed": true,
+      "detail": "hero missing 50.7\u201353.8%"
+    },
+    "hero_grid_robustness": {
+      "passed": true,
+      "detail": "hero missing 13 leave-one-level-out"
+    },
+    "hero_grader_attack": {
+      "passed": true,
+      "detail": "hero missing 96%"
+    },
+    "hero_causal_hardening": {
+      "passed": true,
+      "detail": "hero missing 0%"
+    },
+    "hero_scope_frontier": {
+      "passed": true,
+      "detail": "hero missing frontier-model"
+    },
+    "hero_scope_sota": {
+      "passed": true,
+      "detail": "hero missing sota"
+    },
+    "hero_no_legacy_gain": {
+      "passed": true,
+      "detail": "legacy gain must not be primary hero claim"
+    },
+    "hero_cta_paper": {
+      "passed": true,
+      "detail": "hero missing Paper CTA"
+    },
+    "hero_cta_code": {
+      "passed": true,
+      "detail": "hero missing Code CTA"
+    },
+    "hero_cta_demo": {
+      "passed": true,
+      "detail": "hero missing Demo CTA"
+    },
+    "hero_cta_benchmark": {
+      "passed": true,
+      "detail": "hero missing Benchmark CTA"
+    },
+    "hero_cta_video": {
+      "passed": true,
+      "detail": "hero missing Video CTA"
+    },
+    "hero_cta_novelty_audit": {
+      "passed": true,
+      "detail": "hero missing Novelty audit CTA"
+    },
+    "hero_section_01": {
+      "passed": true,
+      "detail": "Hero must be explicit section 01"
+    },
+    "hero_contract_problem": {
+      "passed": true,
+      "detail": "60-second hero contract missing problem"
+    },
+    "hero_contract_my_contribution": {
+      "passed": true,
+      "detail": "60-second hero contract missing my contribution"
+    },
+    "hero_contract_main_result": {
+      "passed": true,
+      "detail": "60-second hero contract missing main result"
+    },
+    "hero_contract_does_it_work_": {
+      "passed": true,
+      "detail": "60-second hero contract missing does it work?"
+    },
+    "page_14_part_contract": {
+      "passed": true,
+      "detail": "flagship page must contain Hero + 13 required sections"
+    },
+    "section_problem": {
+      "passed": true,
+      "detail": "missing section problem"
+    },
+    "section_idea": {
+      "passed": true,
+      "detail": "missing section idea"
+    },
+    "section_architecture": {
+      "passed": true,
+      "detail": "missing section architecture"
+    },
+    "section_contribution": {
+      "passed": true,
+      "detail": "missing section contribution"
+    },
+    "section_experiments": {
+      "passed": true,
+      "detail": "missing section experiments"
+    },
+    "section_results": {
+      "passed": true,
+      "detail": "missing section results"
+    },
+    "section_failures": {
+      "passed": true,
+      "detail": "missing section failures"
+    },
+    "section_demo": {
+      "passed": true,
+      "detail": "missing section demo"
+    },
+    "section_scaling": {
+      "passed": true,
+      "detail": "missing section scaling"
+    },
+    "section_safety": {
+      "passed": true,
+      "detail": "missing section safety"
+    },
+    "section_technical": {
+      "passed": true,
+      "detail": "missing section technical"
+    },
+    "section_artifacts": {
+      "passed": true,
+      "detail": "missing section artifacts"
+    },
+    "section_citation": {
+      "passed": true,
+      "detail": "missing section citation"
+    },
+    "novelty_ranking_stability": {
+      "passed": true,
+      "detail": "novelty boundary missing ranking-stability"
+    },
+    "novelty_evaluator_under_evaluation": {
+      "passed": true,
+      "detail": "novelty boundary missing evaluator-under-evaluation"
+    },
+    "novelty_counterfactual": {
+      "passed": true,
+      "detail": "novelty boundary missing counterfactual"
+    },
+    "novelty_not_claimed": {
+      "passed": true,
+      "detail": "novelty boundary missing not claimed"
+    },
+    "novelty_first_personalization_benchmark": {
+      "passed": true,
+      "detail": "novelty boundary missing first personalization benchmark"
+    },
+    "novelty_universal_sota": {
+      "passed": true,
+      "detail": "novelty boundary missing universal sota"
+    },
+    "problem_change": {
+      "passed": true,
+      "detail": "evolving-user problem missing"
+    },
+    "problem_autonomy": {
+      "passed": true,
+      "detail": "autonomy boundary missing"
+    },
+    "architecture_agent_loop": {
+      "passed": true,
+      "detail": "architecture missing agent loop"
+    },
+    "architecture_recovery_loop": {
+      "passed": true,
+      "detail": "architecture missing recovery loop"
+    },
+    "architecture_eval___post_training_loop": {
+      "passed": true,
+      "detail": "architecture missing eval / post-training loop"
+    },
+    "architecture_provenance": {
+      "passed": true,
+      "detail": "architecture missing provenance"
+    },
+    "architecture_confidence": {
+      "passed": true,
+      "detail": "architecture missing confidence"
+    },
+    "architecture_verify": {
+      "passed": true,
+      "detail": "architecture missing verify"
+    },
+    "ownership_designed_and_implemented": {
+      "passed": true,
+      "detail": "ownership missing designed and implemented"
+    },
+    "ownership_research_framing": {
+      "passed": true,
+      "detail": "ownership missing research framing"
+    },
+    "ownership_system_implementation": {
+      "passed": true,
+      "detail": "ownership missing system implementation"
+    },
+    "ownership_technical_decisions_i_owned": {
+      "passed": true,
+      "detail": "ownership missing technical decisions i owned"
+    },
+    "experiments_____synthetic_long_horizon_users": {
+      "passed": true,
+      "detail": "experiment setup missing 500 synthetic long-horizon users"
+    },
+    "experiments____held_out_test_seeds": {
+      "passed": true,
+      "detail": "experiment setup missing 10 held-out test seeds"
+    },
+    "experiments____frozen_evaluation_protocols": {
+      "passed": true,
+      "detail": "experiment setup missing 75 frozen evaluation protocols"
+    },
+    "experiments_baselines___ablations": {
+      "passed": true,
+      "detail": "experiment setup missing baselines / ablations"
+    },
+    "experiments_held_out_evaluator_attack_families": {
+      "passed": true,
+      "detail": "experiment setup missing held-out evaluator attack families"
+    },
+    "results_personalization": {
+      "passed": true,
+      "detail": "results missing personalization"
+    },
+    "results_proactivity": {
+      "passed": true,
+      "detail": "results missing proactivity"
+    },
+    "results_verified_recovery": {
+      "passed": true,
+      "detail": "results missing verified recovery"
+    },
+    "results_baseline___method_snapshot": {
+      "passed": true,
+      "detail": "results missing baseline \u2192 method snapshot"
+    },
+    "results_latency": {
+      "passed": true,
+      "detail": "results missing latency"
+    },
+    "results_external_api_cost": {
+      "passed": true,
+      "detail": "results missing external api cost"
+    },
+    "results_synthetic_mechanistic": {
+      "passed": true,
+      "detail": "results missing synthetic/mechanistic"
+    },
+    "failure_visible": {
+      "passed": true,
+      "detail": "failure analysis must be visible"
+    },
+    "failure_reward": {
+      "passed": true,
+      "detail": "semantic generalization failure missing"
+    },
+    "failure_why": {
+      "passed": true,
+      "detail": "failure root-cause explanation missing"
+    },
+    "failure_recovery": {
+      "passed": true,
+      "detail": "concrete recovery path missing"
+    },
+    "interactive_demo": {
+      "passed": true,
+      "detail": "interactive trajectory missing"
+    },
+    "scaling_model_size": {
+      "passed": true,
+      "detail": "scaling scope missing model size"
+    },
+    "scaling_task_horizon": {
+      "passed": true,
+      "detail": "scaling scope missing task horizon"
+    },
+    "scaling_sandbox_tool_primitives": {
+      "passed": true,
+      "detail": "scaling scope missing sandbox tool primitives"
+    },
+    "scaling_reference_local_latency": {
+      "passed": true,
+      "detail": "scaling scope missing reference local latency"
+    },
+    "scaling_external_api_cost": {
+      "passed": true,
+      "detail": "scaling scope missing external api cost"
+    },
+    "scaling_robustness": {
+      "passed": true,
+      "detail": "scaling scope missing robustness"
+    },
+    "safety_irreversible_actions": {
+      "passed": true,
+      "detail": "safety missing irreversible actions"
+    },
+    "safety_human_escalation": {
+      "passed": true,
+      "detail": "safety missing human escalation"
+    },
+    "safety_confirmation": {
+      "passed": true,
+      "detail": "safety missing confirmation"
+    },
+    "safety_known_limits": {
+      "passed": true,
+      "detail": "safety missing known limits"
+    },
+    "technical_engineering_system_design": {
+      "passed": true,
+      "detail": "technical link missing engineering system design"
+    },
+    "technical_training___post_training_baseline": {
+      "passed": true,
+      "detail": "technical link missing training / post-training baseline"
+    },
+    "technical_eval_methodology": {
+      "passed": true,
+      "detail": "technical link missing eval methodology"
+    },
+    "technical_evidence_ledger": {
+      "passed": true,
+      "detail": "technical link missing evidence ledger"
+    },
+    "artifact_paper": {
+      "passed": true,
+      "detail": "artifact missing Paper"
+    },
+    "artifact_code": {
+      "passed": true,
+      "detail": "artifact missing Code"
+    },
+    "artifact_github": {
+      "passed": true,
+      "detail": "artifact missing GitHub"
+    },
+    "artifact_benchmark": {
+      "passed": true,
+      "detail": "artifact missing Benchmark"
+    },
+    "artifact_dataset": {
+      "passed": true,
+      "detail": "artifact missing Dataset"
+    },
+    "artifact_novelty___sota_audit": {
+      "passed": true,
+      "detail": "artifact missing Novelty / SOTA audit"
+    },
+    "artifact_demo": {
+      "passed": true,
+      "detail": "artifact missing Demo"
+    },
+    "artifact_video": {
+      "passed": true,
+      "detail": "artifact missing Video"
+    },
+    "artifact_technical_report": {
+      "passed": true,
+      "detail": "artifact missing Technical report"
+    },
+    "artifact_blog_post": {
+      "passed": true,
+      "detail": "artifact missing Blog post"
+    },
+    "citation_aura_yavary": {
+      "passed": true,
+      "detail": "citation missing Aura Yavary"
+    },
+    "citation_2026": {
+      "passed": true,
+      "detail": "citation missing 2026"
+    },
+    "citation_v4_1_0": {
+      "passed": true,
+      "detail": "citation missing v4.1.0"
+    },
+    "citation__software_": {
+      "passed": true,
+      "detail": "citation missing @software{"
+    },
+    "citation_personametrica": {
+      "passed": true,
+      "detail": "citation missing PersonaMetrica"
+    },
+    "numbering_problem": {
+      "passed": true,
+      "detail": "problem kicker must be '02 \u00b7 Why this problem matters', got '02 \u00b7 Why this problem matters'"
+    },
+    "numbering_idea": {
+      "passed": true,
+      "detail": "idea kicker must be '03 \u00b7 Core idea', got '03 \u00b7 Core idea'"
+    },
+    "numbering_architecture": {
+      "passed": true,
+      "detail": "architecture kicker must be '04 \u00b7 Architecture', got '04 \u00b7 Architecture'"
+    },
+    "numbering_contribution": {
+      "passed": true,
+      "detail": "contribution kicker must be '05 \u00b7 My contribution', got '05 \u00b7 My contribution'"
+    },
+    "numbering_experiments": {
+      "passed": true,
+      "detail": "experiments kicker must be '06 \u00b7 Experiments', got '06 \u00b7 Experiments'"
+    },
+    "numbering_results": {
+      "passed": true,
+      "detail": "results kicker must be '07 \u00b7 Results', got '07 \u00b7 Results'"
+    },
+    "numbering_failures": {
+      "passed": true,
+      "detail": "failures kicker must be '08 \u00b7 Failure analysis', got '08 \u00b7 Failure analysis'"
+    },
+    "numbering_demo": {
+      "passed": true,
+      "detail": "demo kicker must be '09 \u00b7 Interactive demo', got '09 \u00b7 Interactive demo'"
+    },
+    "numbering_scaling": {
+      "passed": true,
+      "detail": "scaling kicker must be '10 \u00b7 Scaling', got '10 \u00b7 Scaling'"
+    },
+    "numbering_safety": {
+      "passed": true,
+      "detail": "safety kicker must be '11 \u00b7 Safety / limitations', got '11 \u00b7 Safety / limitations'"
+    },
+    "numbering_technical": {
+      "passed": true,
+      "detail": "technical kicker must be '12 \u00b7 Technical deep dive', got '12 \u00b7 Technical deep dive'"
+    },
+    "numbering_artifacts": {
+      "passed": true,
+      "detail": "artifacts kicker must be '13 \u00b7 Artifacts', got '13 \u00b7 Artifacts'"
+    },
+    "numbering_citation": {
+      "passed": true,
+      "detail": "citation kicker must be '14 \u00b7 Citation', got '14 \u00b7 Citation'"
+    },
+    "image_alt": {
+      "passed": true,
+      "detail": "all images need alt text"
+    },
+    "skip_link": {
+      "passed": true,
+      "detail": "skip link missing"
+    },
+    "main_landmark": {
+      "passed": true,
+      "detail": "main landmark missing"
+    },
+    "reduced_motion": {
+      "passed": true,
+      "detail": "reduced-motion CSS missing"
+    },
+    "focus_visible": {
+      "passed": true,
+      "detail": "focus-visible CSS missing"
+    },
+    "local_links": {
+      "passed": true,
+      "detail": "broken local targets: []"
+    },
+    "zero_external_runtime_deps": {
+      "passed": true,
+      "detail": "external runtime dependencies: []"
+    },
+    "canonical_paper_personametrica_anonymous_pdf": {
+      "passed": true,
+      "detail": "missing canonical artifact paper/personametrica_anonymous.pdf"
+    },
+    "canonical_data_personametrica_bench_jsonl": {
+      "passed": true,
+      "detail": "missing canonical artifact data/personametrica_bench.jsonl"
+    },
+    "canonical_reports_NOVELTY_SOTA_AUDIT_md": {
+      "passed": true,
+      "detail": "missing canonical artifact reports/NOVELTY_SOTA_AUDIT.md"
+    },
+    "video_artifact": {
+      "passed": true,
+      "detail": "demo video missing"
+    },
+    "trajectory_artifact": {
+      "passed": true,
+      "detail": "runtime trajectory lacks verified recovery"
+    }
+  },
+  "passed": true,
+  "errors": []
+}

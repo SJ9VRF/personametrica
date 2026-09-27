@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.title{font-size:28px;font-weight:700}.label{font-size:17px}.small{font-size:14px}.axis{stroke:#777;stroke-width:1}</style>
+<text x="490" y="38" text-anchor="middle" class="title">Controlled benchmark: full system vs targeted ablation</text>
+<text x="30" y="123" class="label">Personalization accuracy</text>
+<rect x="300" y="105" width="560.0" height="20" fill="#222"/>
+<rect x="300" y="133" width="207.7" height="20" fill="#aaa"/>
+<text x="870" y="121" class="small">Full 1.000</text>
+<text x="870" y="149" class="small">Abl. 0.371</text>
+<text x="30" y="218" class="label">Stale memory rate</text>
+<rect x="300" y="200" width="0.0" height="20" fill="#222"/>
+<rect x="300" y="228" width="352.3" height="20" fill="#aaa"/>
+<text x="870" y="216" class="small">Full 0.000</text>
+<text x="870" y="244" class="small">Abl. 0.629</text>
+<text x="30" y="313" class="label">Proactivity accuracy</text>
+<rect x="300" y="295" width="484.4" height="20" fill="#222"/>
+<rect x="300" y="323" width="95.2" height="20" fill="#aaa"/>
+<text x="870" y="311" class="small">Full 0.865</text>
+<text x="870" y="339" class="small">Abl. 0.170</text>
+<text x="30" y="408" class="label">Failure detection</text>
+<rect x="300" y="390" width="560.0" height="20" fill="#222"/>
+<rect x="300" y="418" width="0.0" height="20" fill="#aaa"/>
+<text x="870" y="406" class="small">Full 1.000</text>
+<text x="870" y="434" class="small">Abl. 0.000</text>
+<text x="300" y="495" class="small">Dark = full system; light = targeted ablation. Synthetic controlled benchmark only.</text>
+</svg>

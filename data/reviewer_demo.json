@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "version": "4.1.0",
+  "elapsed_seconds": 0.008,
+  "checks": {
+    "protocol_registry_fingerprint_valid": true,
+    "benchmark_health_all_pass": true,
+    "leaderboard_has_multiple_winners": true,
+    "seed_bootstrap_supports_instability": true,
+    "all_grid_leave_one_out_variants_keep_multiple_winners": true,
+    "live_causal_grader_rejects_all_heldout_attacks": true,
+    "frozen_grader_gap_is_reproduced": true,
+    "live_temporal_update_works": true
+  },
+  "headline_evidence": {
+    "protocol_cells": 75,
+    "winner_counts": {
+      "time-aware-latest": 45,
+      "personal-belief-state": 27,
+      "first-mention": 3
+    },
+    "winner_change_probability": 0.5156756756756756,
+    "mean_kendall_tau": 0.6987387387387387,
+    "minimum_kendall_tau": 0.2,
+    "seed_bootstrap_winner_change_95_ci": [
+      0.5066666666666667,
+      0.5383783783783784
+    ],
+    "grid_leave_one_out_perturbations": 13,
+    "heldout_frozen_grader_false_accept_rate": 0.96,
+    "heldout_causal_grader_false_accept_rate": 0.0,
+    "pbs_nuisance_invariance": 0.9796296296296296
+  },
+  "boundaries": [
+    "Controlled synthetic mechanism study; not a frontier-model leaderboard claim.",
+    "Bootstrap interval quantifies simulator-seed variation, not human-population uncertainty.",
+    "Held-out grader attacks are authored synthetic attacks, not production trajectories."
+  ]
+}

@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{neurips_2026}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\usepackage{url}
+\graphicspath{{./}{paper/}}
+\title{PersonaMetrica: Stress-Testing Evaluation Protocols for Long-Horizon Personal Agents}
+\author{Anonymous Author(s)}
+\begin{document}
+\maketitle
+\begin{abstract}
+Long-horizon personal assistants must do more than retrieve a previously stated preference: they must determine which evidence still applies, represent uncertainty when evidence conflicts, respect temporary scope, and decide when a current belief is reliable enough to act on. Existing memory and personalization evaluations often emphasize recall, preference following, or state accuracy. We study a narrower evaluation question: **which conclusions are stable once confidence is allowed to control action, and which depend on the calibration protocol itself?** We introduce **PersonaMetrica-Bench**, a controlled evaluation framework that jointly measures current-state accuracy, confidence calibration, action coverage, selective accuracy, risk–coverage, and downstream decision utility under evolving preferences. We also introduce **Personal Belief State (PBS)**, a transparent evidence-weighted temporal reference system. The standard release contains **500 synthetic users, 27,133 observations, and 13,500 decision queries** across ten preference domains. On the standard controlled run PBS obtains **0.932 vs. 0.906 state accuracy**, **0.060 vs. 0.080 Brier**, and lower AURC (**0.0107 vs. 0.0208**) than a strong `time-aware-latest` baseline. However, our most important result is negative: **fixed-threshold decision utility is not protocol-invariant**. With native confidence, PBS appears substantially better than time-aware-latest on 800-turn histories; after every tracker receives the same low-capacity post-hoc calibration on development seeds only, the long-horizon utility ranking reverses (**0.588 PBS vs. 0.687 time-aware-latest**) while PBS retains higher selective accuracy and slightly lower Brier. A separate frozen audit over 75 protocol cells and all six released baselines finds that time-aware-latest wins 45 cells, PBS 27, and first-mention 3; two protocol cells choose different winners with probability **0.516**, mean complete-ranking Kendall $\tau$ is **0.699**, and the most discordant pair falls to **0.20**. A paired seed-bootstrap diagnostic gives winner-change **0.516 [0.507, 0.538]**, and 13 leave-one-level-out grid perturbations all retain multiple winners. Thus neither raw state accuracy nor fixed-threshold utility from unmatched confidence scales is a safe standalone model-selection criterion. We recommend reporting state accuracy, calibration, risk–coverage/AURC, and utility only under an explicitly shared calibration-and-action protocol. PersonaMetrica-Bench releases six baselines, development/test splits, calibration and sensitivity analyses, component ablations, a human-annotation interface, an external-model evaluation contract, machine-readable metadata, and full reproduction artifacts. We explicitly do not claim frontier-model or human-population generalization from the controlled study.
+\end{abstract}
+\input{paper/official_body.tex}
+\bibliographystyle{plainnat}
+\bibliography{paper/references}
+\clearpage
+\input{paper/official_appendix_checklist.tex}
+\end{document}

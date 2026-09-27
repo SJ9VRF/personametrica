@@ -1,0 +1,152 @@
+USER: I prefer concise answers.
+  memory: [('preference.response_detail', 'concise')]
+USER: My goal is prepare my conference talk by Friday.
+  goal captured
+USER: I prefer working in the evening.
+  memory: [('preference.work_time', 'evening')]
+USER: Keep me on track, but don't nag me.
+USER: Actually, mornings work better for me now.
+  memory: [('preference.work_time', 'morning')]
+
+PROACTIVITY: suggest score= 0.715
+WHY: goal relevance=0.95; urgency=0.90; stakes=0.20, reversibility=0.95; autonomy preference=0.45
+
+CURRENT STATE
+{
+  "user_id": "demo-user",
+  "memories": [
+    {
+      "key": "preference.response_detail",
+      "value": "concise",
+      "content": "I prefer concise answers.",
+      "memory_type": "preference",
+      "source": "explicit",
+      "confidence": 0.99,
+      "user_id": "demo-user",
+      "created_at": "2026-09-23T18:11:07.844892+00:00",
+      "updated_at": "2026-09-23T18:11:07.844959+00:00",
+      "valid_from": "2026-09-23T18:11:07.844692+00:00",
+      "valid_until": null,
+      "stability": "high",
+      "context": {
+        "domain": "communication"
+      },
+      "supersedes": null,
+      "contradicted_by": [],
+      "status": "active",
+      "memory_id": "59ba074b-df9f-45b1-9558-53d15966630e"
+    },
+    {
+      "key": "preference.work_time",
+      "value": "morning",
+      "content": "Actually, mornings work better for me now.",
+      "memory_type": "preference",
+      "source": "explicit",
+      "confidence": 0.97,
+      "user_id": "demo-user",
+      "created_at": "2026-09-23T18:11:07.845365+00:00",
+      "updated_at": "2026-09-23T18:11:07.845367+00:00",
+      "valid_from": "2026-09-23T18:11:07.845354+00:00",
+      "valid_until": null,
+      "stability": "medium",
+      "context": {
+        "domain": "work_schedule"
+      },
+      "supersedes": "adb853bc-8b53-42b8-b9b5-61fe28dff535",
+      "contradicted_by": [],
+      "status": "active",
+      "memory_id": "cfe4618c-15f2-4cf9-9372-33f0151331a9"
+    }
+  ],
+  "memory_history": [
+    {
+      "key": "preference.response_detail",
+      "value": "concise",
+      "content": "I prefer concise answers.",
+      "memory_type": "preference",
+      "source": "explicit",
+      "confidence": 0.99,
+      "user_id": "demo-user",
+      "created_at": "2026-09-23T18:11:07.844892+00:00",
+      "updated_at": "2026-09-23T18:11:07.844959+00:00",
+      "valid_from": "2026-09-23T18:11:07.844692+00:00",
+      "valid_until": null,
+      "stability": "high",
+      "context": {
+        "domain": "communication"
+      },
+      "supersedes": null,
+      "contradicted_by": [],
+      "status": "active",
+      "memory_id": "59ba074b-df9f-45b1-9558-53d15966630e"
+    },
+    {
+      "key": "preference.work_time",
+      "value": "evening",
+      "content": "I prefer working in the evening.",
+      "memory_type": "preference",
+      "source": "explicit",
+      "confidence": 0.97,
+      "user_id": "demo-user",
+      "created_at": "2026-09-23T18:11:07.845311+00:00",
+      "updated_at": "2026-09-23T18:11:07.845365+00:00",
+      "valid_from": "2026-09-23T18:11:07.845244+00:00",
+      "valid_until": null,
+      "stability": "medium",
+      "context": {
+        "domain": "work_schedule"
+      },
+      "supersedes": null,
+      "contradicted_by": [
+        "cfe4618c-15f2-4cf9-9372-33f0151331a9"
+      ],
+      "status": "superseded",
+      "memory_id": "adb853bc-8b53-42b8-b9b5-61fe28dff535"
+    },
+    {
+      "key": "preference.work_time",
+      "value": "morning",
+      "content": "Actually, mornings work better for me now.",
+      "memory_type": "preference",
+      "source": "explicit",
+      "confidence": 0.97,
+      "user_id": "demo-user",
+      "created_at": "2026-09-23T18:11:07.845365+00:00",
+      "updated_at": "2026-09-23T18:11:07.845367+00:00",
+      "valid_from": "2026-09-23T18:11:07.845354+00:00",
+      "valid_until": null,
+      "stability": "medium",
+      "context": {
+        "domain": "work_schedule"
+      },
+      "supersedes": "adb853bc-8b53-42b8-b9b5-61fe28dff535",
+      "contradicted_by": [],
+      "status": "active",
+      "memory_id": "cfe4618c-15f2-4cf9-9372-33f0151331a9"
+    }
+  ],
+  "goals": [
+    {
+      "description": "prepare my conference talk by Friday",
+      "user_id": "demo-user",
+      "priority": 0.7,
+      "deadline": "Friday",
+      "status": "active",
+      "confidence": 1.0,
+      "parent_goal_id": null,
+      "subtasks": [],
+      "progress": 0.0,
+      "blockers": [],
+      "dependencies": [],
+      "goal_id": "43d97618-c057-4004-9cf1-75ca6df274d1",
+      "created_at": "2026-09-23T18:11:07.845233+00:00"
+    }
+  ],
+  "behavior": {
+    "verbosity": 0.2,
+    "directness": 0.5,
+    "warmth": 0.5,
+    "initiative": 0.5
+  },
+  "autonomy_preference": 0.44999999999999996
+}

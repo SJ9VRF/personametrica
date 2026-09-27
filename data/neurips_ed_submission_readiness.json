@@ -1,0 +1,172 @@
+{
+  "status": "BLOCKED_EXTERNAL",
+  "strict": false,
+  "checks": [
+    {
+      "name": "anonymous paper source",
+      "ok": true,
+      "detail": "paper/PAPER.md contains no public author name",
+      "blocking": false
+    },
+    {
+      "name": "15 checklist answers",
+      "ok": true,
+      "detail": "paper/APPENDIX_CHECKLIST.md contains items 1-15",
+      "blocking": false
+    },
+    {
+      "name": "official-template-ready source",
+      "ok": true,
+      "detail": "paper/main_neurips_2026.tex generated",
+      "blocking": false
+    },
+    {
+      "name": "official NeurIPS 2026 style present",
+      "ok": false,
+      "detail": "Download official 2026 template and place paper/neurips_2026.sty before final submission",
+      "blocking": true
+    },
+    {
+      "name": "Croissant core: @context",
+      "ok": true,
+      "detail": "@context present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant core: @type",
+      "ok": true,
+      "detail": "@type present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant core: name",
+      "ok": true,
+      "detail": "name present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant core: url",
+      "ok": true,
+      "detail": "url present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant core: license",
+      "ok": true,
+      "detail": "license present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant core: conformsTo",
+      "ok": true,
+      "detail": "conformsTo present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant core: distribution",
+      "ok": true,
+      "detail": "distribution present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant core: recordSet",
+      "ok": true,
+      "detail": "recordSet present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant RAI: rai:dataLimitations",
+      "ok": true,
+      "detail": "rai:dataLimitations present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant RAI: rai:dataBiases",
+      "ok": true,
+      "detail": "rai:dataBiases present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant RAI: rai:personalSensitiveInformation",
+      "ok": true,
+      "detail": "rai:personalSensitiveInformation present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant RAI: rai:dataUseCases",
+      "ok": true,
+      "detail": "rai:dataUseCases present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant RAI: rai:dataSocialImpact",
+      "ok": true,
+      "detail": "rai:dataSocialImpact present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant RAI: rai:hasSyntheticData",
+      "ok": true,
+      "detail": "rai:hasSyntheticData present",
+      "blocking": false
+    },
+    {
+      "name": "Croissant RAI: prov:wasGeneratedBy",
+      "ok": true,
+      "detail": "prov:wasGeneratedBy present",
+      "blocking": false
+    },
+    {
+      "name": "anonymous reviewer-accessible dataset URL",
+      "ok": false,
+      "detail": "current url='REPLACE_WITH_ANONYMOUS_REVIEW_URL_BEFORE_SUBMISSION'; must be externally accessible at submission",
+      "blocking": true
+    },
+    {
+      "name": "anonymous submission bundle",
+      "ok": true,
+      "detail": "submission zip exists",
+      "blocking": false
+    },
+    {
+      "name": "bundle excludes author-facing metadata",
+      "ok": true,
+      "detail": "suspicious files=[]",
+      "blocking": false
+    },
+    {
+      "name": "readable draft PDF",
+      "ok": true,
+      "detail": "generic-style research draft exists; not venue-format final",
+      "blocking": false
+    },
+    {
+      "name": "PDF under 50MB",
+      "ok": true,
+      "detail": "NeurIPS maximum file size is 50MB",
+      "blocking": false
+    },
+    {
+      "name": "generic draft content <=9 pages",
+      "ok": true,
+      "detail": "content pages before references=8",
+      "blocking": false
+    },
+    {
+      "name": "anonymous PDF content scan",
+      "ok": true,
+      "detail": "leaks=[]",
+      "blocking": false
+    },
+    {
+      "name": "anonymous bundle content scan",
+      "ok": true,
+      "detail": "leaks=[]",
+      "blocking": false
+    }
+  ],
+  "external_blockers": [
+    "official NeurIPS 2026 style present",
+    "anonymous reviewer-accessible dataset URL"
+  ]
+}

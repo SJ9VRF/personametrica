@@ -1,0 +1,13 @@
+{
+  "pdf_pages_total": 16,
+  "references_start_page": 9,
+  "content_pages_before_references": 8,
+  "generic_draft_content_within_9_pages": true,
+  "pdf_size_bytes": 511729,
+  "pdf_under_50mb": true,
+  "paper_identity_leaks": [],
+  "bundle_identity_leaks": [],
+  "checklist_complete_15_items": true,
+  "official_style_present": false,
+  "official_template_url": "https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip"
+}

@@ -1,0 +1,578 @@
+{
+  "seeds": [
+    1,
+    7,
+    19,
+    42,
+    73
+  ],
+  "users_per_seed": 100,
+  "turns": 60,
+  "summary": {
+    "full_temporal_os": {
+      "personalization_accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "no_temporal_update": {
+      "personalization_accuracy": {
+        "mean": 0.43200000000000005,
+        "std": 0.04606140350186893,
+        "min": 0.3709090909090909,
+        "max": 0.4890909090909091
+      },
+      "stale_memory_rate": {
+        "mean": 0.568,
+        "std": 0.04606140350186888,
+        "min": 0.510909090909091,
+        "max": 0.629090909090909
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "stateless": {
+      "personalization_accuracy": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.6364333333333333,
+        "std": 0.0,
+        "min": 0.6364333333333333,
+        "max": 0.6364333333333333
+      }
+    },
+    "no_contradiction_resolution": {
+      "personalization_accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.784,
+        "std": 0.03577708763999664,
+        "min": 0.73,
+        "max": 0.82
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "no_goal_model": {
+      "personalization_accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "uncalibrated_proactivity": {
+      "personalization_accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.166,
+        "std": 0.015165750888103097,
+        "min": 0.14,
+        "max": 0.18
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.04253346835581788,
+        "std": 0.011087450213613083,
+        "min": 0.027777777777777776,
+        "max": 0.058823529411764705
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "no_confidence_tracking": {
+      "personalization_accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.06976666666666667,
+        "std": 0.0,
+        "min": 0.06976666666666667,
+        "max": 0.06976666666666667
+      }
+    },
+    "no_outcome_verification": {
+      "personalization_accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "no_privacy_guard": {
+      "personalization_accuracy": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "stale_memory_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "contradiction_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "goal_capture_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "proactive_decision_accuracy": {
+        "mean": 0.875,
+        "std": 0.016955824957813188,
+        "min": 0.86,
+        "max": 0.9
+      },
+      "autonomy_violation_rate": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "high_stakes_confirmation_rate": {
+        "mean": 0.9749019607843138,
+        "std": 0.034478595514248256,
+        "min": 0.9333333333333333,
+        "max": 1.0
+      },
+      "low_confidence_clarification_rate": {
+        "mean": 0.9485763163982449,
+        "std": 0.016841154521160546,
+        "min": 0.9245283018867925,
+        "max": 0.967032967032967
+      },
+      "failure_detection_rate": {
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "memory_confidence_brier": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "effects": {
+    "temporal_update_personalization_gain": 0.568,
+    "temporal_update_stale_memory_reduction": 0.568,
+    "contradiction_resolution_reduction": 0.784,
+    "calibrated_proactivity_accuracy_gain": 0.709,
+    "verification_failure_detection_gain": 1.0
+  }
+}

@@ -1,0 +1,3 @@
+Official NeurIPS 2026 style file is not bundled because it could not be fetched from this network-isolated environment. Download the official template from:
+https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip
+Place neurips_2026.sty in paper/ and rerun: python scripts/prepare_neurips_2026_submission.py

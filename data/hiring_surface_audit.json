@@ -1,0 +1,21 @@
+{
+  "version": "4.1.0",
+  "status": "PASS",
+  "checks": {
+    "public_name_aura_yavary": true,
+    "current_version_on_public_surfaces": true,
+    "homepage_has_claim_boundary": true,
+    "homepage_links_fast_reviewer_demo": true,
+    "hiring_readme_keeps_known_failures": true,
+    "readme_links_reviewer_demo": true,
+    "readme_links_cold_start_audit": true,
+    "no_placeholder_tokens_on_public_surfaces": true
+  },
+  "surfaces": [
+    "README.md",
+    "docs/HIRING_MANAGER_README.md",
+    "project/index.html",
+    "CITATION.cff",
+    "pyproject.toml"
+  ]
+}

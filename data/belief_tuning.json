@@ -1,0 +1,154 @@
+{
+  "selection_rule": "minimum mean Brier on development seeds 1,2,3",
+  "development_users_per_seed": 120,
+  "grid": [
+    {
+      "half_life_turns": 90,
+      "temperature": 0.2,
+      "mean_brier": 0.058179135610915166,
+      "mean_accuracy": 0.9358024691358025,
+      "mean_utility": 0.7810905349794238
+    },
+    {
+      "half_life_turns": 120,
+      "temperature": 0.2,
+      "mean_brier": 0.06000424852388508,
+      "mean_accuracy": 0.9223251028806585,
+      "mean_utility": 0.7907921810699589
+    },
+    {
+      "half_life_turns": 60,
+      "temperature": 0.2,
+      "mean_brier": 0.0687164672396041,
+      "mean_accuracy": 0.9377572016460906,
+      "mean_utility": 0.7055349794238683
+    },
+    {
+      "half_life_turns": 120,
+      "temperature": 0.3,
+      "mean_brier": 0.07164379011647905,
+      "mean_accuracy": 0.9223251028806585,
+      "mean_utility": 0.7161008230452675
+    },
+    {
+      "half_life_turns": 180,
+      "temperature": 0.2,
+      "mean_brier": 0.07211136203293962,
+      "mean_accuracy": 0.8980452674897119,
+      "mean_utility": 0.7560082304526748
+    },
+    {
+      "half_life_turns": 90,
+      "temperature": 0.3,
+      "mean_brier": 0.07344955937168311,
+      "mean_accuracy": 0.9358024691358025,
+      "mean_utility": 0.6829732510288066
+    },
+    {
+      "half_life_turns": 180,
+      "temperature": 0.3,
+      "mean_brier": 0.07755529009617457,
+      "mean_accuracy": 0.8980452674897119,
+      "mean_utility": 0.7106481481481483
+    },
+    {
+      "half_life_turns": 60,
+      "temperature": 0.3,
+      "mean_brier": 0.0864657149005426,
+      "mean_accuracy": 0.9377572016460906,
+      "mean_utility": 0.5854732510288065
+    },
+    {
+      "half_life_turns": 120,
+      "temperature": 0.42,
+      "mean_brier": 0.08693017895378401,
+      "mean_accuracy": 0.9223251028806585,
+      "mean_utility": 0.6070781893004115
+    },
+    {
+      "half_life_turns": 260,
+      "temperature": 0.2,
+      "mean_brier": 0.08717238744148853,
+      "mean_accuracy": 0.875514403292181,
+      "mean_utility": 0.7104218106995885
+    },
+    {
+      "half_life_turns": 260,
+      "temperature": 0.3,
+      "mean_brier": 0.08739863314320283,
+      "mean_accuracy": 0.875514403292181,
+      "mean_utility": 0.6807716049382716
+    },
+    {
+      "half_life_turns": 180,
+      "temperature": 0.42,
+      "mean_brier": 0.08809270220769995,
+      "mean_accuracy": 0.8980452674897119,
+      "mean_utility": 0.6451440329218107
+    },
+    {
+      "half_life_turns": 90,
+      "temperature": 0.42,
+      "mean_brier": 0.0910005717008196,
+      "mean_accuracy": 0.9358024691358025,
+      "mean_utility": 0.5535288065843621
+    },
+    {
+      "half_life_turns": 260,
+      "temperature": 0.42,
+      "mean_brier": 0.09338740998432761,
+      "mean_accuracy": 0.875514403292181,
+      "mean_utility": 0.6386522633744857
+    },
+    {
+      "half_life_turns": 180,
+      "temperature": 0.55,
+      "mean_brier": 0.10006207931149431,
+      "mean_accuracy": 0.8980452674897119,
+      "mean_utility": 0.5503703703703704
+    },
+    {
+      "half_life_turns": 120,
+      "temperature": 0.55,
+      "mean_brier": 0.10172137394486891,
+      "mean_accuracy": 0.9223251028806585,
+      "mean_utility": 0.4816769547325103
+    },
+    {
+      "half_life_turns": 260,
+      "temperature": 0.55,
+      "mean_brier": 0.10227595019215463,
+      "mean_accuracy": 0.875514403292181,
+      "mean_utility": 0.5926131687242798
+    },
+    {
+      "half_life_turns": 60,
+      "temperature": 0.42,
+      "mean_brier": 0.10460225522289784,
+      "mean_accuracy": 0.9377572016460906,
+      "mean_utility": 0.4498251028806584
+    },
+    {
+      "half_life_turns": 90,
+      "temperature": 0.55,
+      "mean_brier": 0.10679266873703254,
+      "mean_accuracy": 0.9358024691358025,
+      "mean_utility": 0.41806584362139915
+    },
+    {
+      "half_life_turns": 60,
+      "temperature": 0.55,
+      "mean_brier": 0.11984600252496151,
+      "mean_accuracy": 0.9377572016460906,
+      "mean_utility": 0.32425925925925925
+    }
+  ],
+  "selected": {
+    "half_life_turns": 90,
+    "temperature": 0.2,
+    "mean_brier": 0.058179135610915166,
+    "mean_accuracy": 0.9358024691358025,
+    "mean_utility": 0.7810905349794238
+  },
+  "held_out_test_seeds": "10-19"
+}

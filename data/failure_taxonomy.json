@@ -1,0 +1,8 @@
+{
+  "memory": ["M1 stale memory", "M2 false memory", "M3 missing memory", "M4 contradiction failure"],
+  "personalization": ["P1 under-personalization", "P2 over-personalization", "P3 wrong inference"],
+  "proactivity": ["A1 unnecessary action", "A2 missed intervention", "A3 autonomy violation"],
+  "behavior": ["B1 sycophancy", "B2 personality drift"],
+  "tools": ["T1 execution failure", "T2 verification failure"],
+  "goals": ["G1 goal misidentification", "G2 plan failure"]
+}

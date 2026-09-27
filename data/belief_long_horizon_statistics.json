@@ -1,0 +1,105 @@
+{
+  "runs": [
+    {
+      "seed": 30,
+      "accuracy_delta": -0.021759259259259256,
+      "utility_gain": 0.2572685185185185,
+      "coverage_gain": 0.3134259259259259,
+      "brier_reduction": 0.010287691574703384
+    },
+    {
+      "seed": 31,
+      "accuracy_delta": -0.009722222222222188,
+      "utility_gain": 0.27877314814814824,
+      "coverage_gain": 0.3224537037037037,
+      "brier_reduction": 0.015882595834973923
+    },
+    {
+      "seed": 32,
+      "accuracy_delta": -0.01689814814814805,
+      "utility_gain": 0.28358796296296296,
+      "coverage_gain": 0.3196759259259259,
+      "brier_reduction": 0.015829411017141942
+    },
+    {
+      "seed": 33,
+      "accuracy_delta": -0.016898148148148162,
+      "utility_gain": 0.28777777777777774,
+      "coverage_gain": 0.33148148148148143,
+      "brier_reduction": 0.01560016562564058
+    },
+    {
+      "seed": 34,
+      "accuracy_delta": -0.013425925925925952,
+      "utility_gain": 0.277199074074074,
+      "coverage_gain": 0.32523148148148145,
+      "brier_reduction": 0.014471000336815032
+    },
+    {
+      "seed": 35,
+      "accuracy_delta": -0.009722222222222188,
+      "utility_gain": 0.2969907407407407,
+      "coverage_gain": 0.3449074074074074,
+      "brier_reduction": 0.019096858075835596
+    },
+    {
+      "seed": 36,
+      "accuracy_delta": -0.009722222222222188,
+      "utility_gain": 0.27749999999999997,
+      "coverage_gain": 0.3212962962962963,
+      "brier_reduction": 0.01739252714002862
+    },
+    {
+      "seed": 37,
+      "accuracy_delta": -0.013657407407407396,
+      "utility_gain": 0.2997916666666667,
+      "coverage_gain": 0.32893518518518516,
+      "brier_reduction": 0.016989700818525064
+    },
+    {
+      "seed": 38,
+      "accuracy_delta": -0.012500000000000067,
+      "utility_gain": 0.28511574074074075,
+      "coverage_gain": 0.33495370370370364,
+      "brier_reduction": 0.013884596507023061
+    },
+    {
+      "seed": 39,
+      "accuracy_delta": -0.01782407407407416,
+      "utility_gain": 0.2946064814814815,
+      "coverage_gain": 0.33263888888888893,
+      "brier_reduction": 0.015586125411797228
+    }
+  ],
+  "summary": {
+    "accuracy_delta": {
+      "mean": -0.01421296296296296,
+      "bootstrap_95_ci": [
+        -0.016782407407407385,
+        -0.01182870370370368
+      ]
+    },
+    "utility_gain": {
+      "mean": 0.2838611111111111,
+      "bootstrap_95_ci": [
+        0.2761111111111111,
+        0.29090509259259256
+      ]
+    },
+    "coverage_gain": {
+      "mean": 0.3275,
+      "bootstrap_95_ci": [
+        0.32226851851851845,
+        0.33296296296296296
+      ]
+    },
+    "brier_reduction": {
+      "mean": 0.015502067234248443,
+      "bootstrap_95_ci": [
+        0.01394727741615526,
+        0.016812009529280896
+      ]
+    }
+  },
+  "setting": "90 users x 800 turns; test seeds 30-39"
+}

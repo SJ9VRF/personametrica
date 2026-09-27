@@ -1,0 +1,74 @@
+{
+  "config": {
+    "users": 500,
+    "turns": 240,
+    "seed": 31,
+    "noise_rate": 0.1,
+    "implicit_rate": 0.22,
+    "temporary_rate": 0.24,
+    "query_every": 24,
+    "behavior_noise_rate": 0.22,
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "fa",
+      "zh"
+    ]
+  },
+  "observations": 27133,
+  "queries": 13500,
+  "users_with_queries": 500,
+  "source_counts": {
+    "explicit": 8123,
+    "hypothetical": 5933,
+    "other_person": 5792,
+    "implicit_behavior": 6660,
+    "implicit_choice": 625
+  },
+  "slot_counts": {
+    "work_time": 2688,
+    "response_detail": 2739,
+    "notification_style": 2731,
+    "travel_pace": 2724,
+    "restaurant_noise": 2775,
+    "budget_style": 2725,
+    "exercise_time": 2644,
+    "meeting_style": 2701,
+    "reading_depth": 2706,
+    "planning_style": 2700
+  },
+  "language_tag_counts": {
+    "fr": 5448,
+    "es": 5450,
+    "fa": 5366,
+    "en": 5365,
+    "zh": 5504
+  },
+  "provenance_counts": {
+    "initial-explicit": 5000,
+    "distractor": 11725,
+    "behavioral-cue": 6660,
+    "durable-change": 2748,
+    "temporary-exception": 1000
+  },
+  "query_slot_counts": {
+    "response_detail": 1337,
+    "meeting_style": 1363,
+    "exercise_time": 1327,
+    "planning_style": 1359,
+    "work_time": 1376,
+    "restaurant_noise": 1355,
+    "travel_pace": 1368,
+    "budget_style": 1340,
+    "reading_depth": 1372,
+    "notification_style": 1303
+  },
+  "query_context_counts": {
+    "general": 13356,
+    "temporary": 144
+  },
+  "duplicate_observation_fingerprints": 13712,
+  "deterministic_replay": true,
+  "replay_sha256": "3671721a74dc4835abec183a08426722267dad3714eb779c1b3042ade56d7235"
+}

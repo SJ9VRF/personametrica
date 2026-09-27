@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="680" viewBox="0 0 520 680">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,sans-serif;fill:#111}.small{font-size:11px}.label{font-size:12px;font-weight:600}.title{font-size:16px;font-weight:700}</style>
+<text x="20" y="26" class="title">Protocol stability: PBS minus time-aware utility</text>
+<text x="156.0" y="48" text-anchor="middle" class="small">thr 0.55</text>
+<text x="228.0" y="48" text-anchor="middle" class="small">thr 0.65</text>
+<text x="300.0" y="48" text-anchor="middle" class="small">thr 0.70</text>
+<text x="372.0" y="48" text-anchor="middle" class="small">thr 0.75</text>
+<text x="444.0" y="48" text-anchor="middle" class="small">thr 0.85</text>
+<text x="8" y="75" class="label">native</text>
+<text x="112" y="83" text-anchor="end" class="small">cost 0.00</text>
+<rect x="120" y="60" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="82" text-anchor="middle" class="small">-0.040</text>
+<rect x="192" y="60" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="227.0" y="82" text-anchor="middle" class="small">+0.304</text>
+<rect x="264" y="60" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="299.0" y="82" text-anchor="middle" class="small">+0.256</text>
+<rect x="336" y="60" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="371.0" y="82" text-anchor="middle" class="small">+0.201</text>
+<rect x="408" y="60" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="82" text-anchor="middle" class="small">+0.091</text>
+<text x="112" y="119" text-anchor="end" class="small">cost 0.05</text>
+<rect x="120" y="96" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="118" text-anchor="middle" class="small">-0.047</text>
+<rect x="192" y="96" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="227.0" y="118" text-anchor="middle" class="small">+0.324</text>
+<rect x="264" y="96" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="299.0" y="118" text-anchor="middle" class="small">+0.272</text>
+<rect x="336" y="96" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="371.0" y="118" text-anchor="middle" class="small">+0.213</text>
+<rect x="408" y="96" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="118" text-anchor="middle" class="small">+0.096</text>
+<text x="112" y="155" text-anchor="end" class="small">cost 0.10</text>
+<rect x="120" y="132" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="154" text-anchor="middle" class="small">-0.053</text>
+<rect x="192" y="132" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="227.0" y="154" text-anchor="middle" class="small">+0.344</text>
+<rect x="264" y="132" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="299.0" y="154" text-anchor="middle" class="small">+0.289</text>
+<rect x="336" y="132" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="371.0" y="154" text-anchor="middle" class="small">+0.226</text>
+<rect x="408" y="132" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="154" text-anchor="middle" class="small">+0.102</text>
+<text x="112" y="191" text-anchor="end" class="small">cost 0.20</text>
+<rect x="120" y="168" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="190" text-anchor="middle" class="small">-0.066</text>
+<rect x="192" y="168" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="227.0" y="190" text-anchor="middle" class="small">+0.385</text>
+<rect x="264" y="168" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="299.0" y="190" text-anchor="middle" class="small">+0.322</text>
+<rect x="336" y="168" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="371.0" y="190" text-anchor="middle" class="small">+0.250</text>
+<rect x="408" y="168" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="190" text-anchor="middle" class="small">+0.112</text>
+<text x="112" y="227" text-anchor="end" class="small">cost 0.35</text>
+<rect x="120" y="204" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="226" text-anchor="middle" class="small">-0.085</text>
+<rect x="192" y="204" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="227.0" y="226" text-anchor="middle" class="small">+0.447</text>
+<rect x="264" y="204" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="299.0" y="226" text-anchor="middle" class="small">+0.371</text>
+<rect x="336" y="204" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="371.0" y="226" text-anchor="middle" class="small">+0.288</text>
+<rect x="408" y="204" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="226" text-anchor="middle" class="small">+0.128</text>
+<text x="8" y="255" class="label">bucket-laplace</text>
+<text x="112" y="263" text-anchor="end" class="small">cost 0.00</text>
+<rect x="120" y="240" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="262" text-anchor="middle" class="small">-0.042</text>
+<rect x="192" y="240" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="262" text-anchor="middle" class="small">-0.046</text>
+<rect x="264" y="240" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="262" text-anchor="middle" class="small">-0.065</text>
+<rect x="336" y="240" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="262" text-anchor="middle" class="small">-0.093</text>
+<rect x="408" y="240" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="262" text-anchor="middle" class="small">+0.298</text>
+<text x="112" y="299" text-anchor="end" class="small">cost 0.05</text>
+<rect x="120" y="276" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="298" text-anchor="middle" class="small">-0.045</text>
+<rect x="192" y="276" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="298" text-anchor="middle" class="small">-0.053</text>
+<rect x="264" y="276" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="298" text-anchor="middle" class="small">-0.076</text>
+<rect x="336" y="276" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="298" text-anchor="middle" class="small">-0.107</text>
+<rect x="408" y="276" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="298" text-anchor="middle" class="small">+0.318</text>
+<text x="112" y="335" text-anchor="end" class="small">cost 0.10</text>
+<rect x="120" y="312" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="334" text-anchor="middle" class="small">-0.049</text>
+<rect x="192" y="312" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="334" text-anchor="middle" class="small">-0.060</text>
+<rect x="264" y="312" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="334" text-anchor="middle" class="small">-0.086</text>
+<rect x="336" y="312" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="334" text-anchor="middle" class="small">-0.121</text>
+<rect x="408" y="312" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="334" text-anchor="middle" class="small">+0.338</text>
+<text x="112" y="371" text-anchor="end" class="small">cost 0.20</text>
+<rect x="120" y="348" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="370" text-anchor="middle" class="small">-0.056</text>
+<rect x="192" y="348" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="370" text-anchor="middle" class="small">-0.075</text>
+<rect x="264" y="348" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="370" text-anchor="middle" class="small">-0.108</text>
+<rect x="336" y="348" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="370" text-anchor="middle" class="small">-0.150</text>
+<rect x="408" y="348" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="370" text-anchor="middle" class="small">+0.378</text>
+<text x="112" y="407" text-anchor="end" class="small">cost 0.35</text>
+<rect x="120" y="384" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="406" text-anchor="middle" class="small">-0.066</text>
+<rect x="192" y="384" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="406" text-anchor="middle" class="small">-0.096</text>
+<rect x="264" y="384" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="406" text-anchor="middle" class="small">-0.139</text>
+<rect x="336" y="384" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="406" text-anchor="middle" class="small">-0.192</text>
+<rect x="408" y="384" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="406" text-anchor="middle" class="small">+0.438</text>
+<text x="8" y="435" class="label">isotonic-laplace</text>
+<text x="112" y="443" text-anchor="end" class="small">cost 0.00</text>
+<rect x="120" y="420" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="442" text-anchor="middle" class="small">-0.046</text>
+<rect x="192" y="420" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="442" text-anchor="middle" class="small">-0.046</text>
+<rect x="264" y="420" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="442" text-anchor="middle" class="small">-0.084</text>
+<rect x="336" y="420" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="442" text-anchor="middle" class="small">-0.093</text>
+<rect x="408" y="420" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="442" text-anchor="middle" class="small">+0.289</text>
+<text x="112" y="479" text-anchor="end" class="small">cost 0.05</text>
+<rect x="120" y="456" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="478" text-anchor="middle" class="small">-0.054</text>
+<rect x="192" y="456" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="478" text-anchor="middle" class="small">-0.054</text>
+<rect x="264" y="456" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="478" text-anchor="middle" class="small">-0.098</text>
+<rect x="336" y="456" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="478" text-anchor="middle" class="small">-0.107</text>
+<rect x="408" y="456" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="478" text-anchor="middle" class="small">+0.308</text>
+<text x="112" y="515" text-anchor="end" class="small">cost 0.10</text>
+<rect x="120" y="492" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="514" text-anchor="middle" class="small">-0.062</text>
+<rect x="192" y="492" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="514" text-anchor="middle" class="small">-0.062</text>
+<rect x="264" y="492" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="514" text-anchor="middle" class="small">-0.111</text>
+<rect x="336" y="492" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="514" text-anchor="middle" class="small">-0.121</text>
+<rect x="408" y="492" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="514" text-anchor="middle" class="small">+0.327</text>
+<text x="112" y="551" text-anchor="end" class="small">cost 0.20</text>
+<rect x="120" y="528" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="550" text-anchor="middle" class="small">-0.078</text>
+<rect x="192" y="528" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="550" text-anchor="middle" class="small">-0.078</text>
+<rect x="264" y="528" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="550" text-anchor="middle" class="small">-0.138</text>
+<rect x="336" y="528" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="550" text-anchor="middle" class="small">-0.150</text>
+<rect x="408" y="528" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="550" text-anchor="middle" class="small">+0.365</text>
+<text x="112" y="587" text-anchor="end" class="small">cost 0.35</text>
+<rect x="120" y="564" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="155.0" y="586" text-anchor="middle" class="small">-0.102</text>
+<rect x="192" y="564" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="227.0" y="586" text-anchor="middle" class="small">-0.102</text>
+<rect x="264" y="564" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="299.0" y="586" text-anchor="middle" class="small">-0.177</text>
+<rect x="336" y="564" width="70" height="34" rx="3" fill="#f1dfd2" stroke="#ccc"/>
+<text x="371.0" y="586" text-anchor="middle" class="small">-0.192</text>
+<rect x="408" y="564" width="70" height="34" rx="3" fill="#d9e8f5" stroke="#ccc"/>
+<text x="443.0" y="586" text-anchor="middle" class="small">+0.423</text>
+<text x="20" y="650" class="small">Blue: PBS higher utility. Tan: time-aware-latest higher. Values are mean delta across seeds 30-39.</text>
+</svg>

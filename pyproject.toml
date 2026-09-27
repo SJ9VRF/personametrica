@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personametrica-research"
+version = "4.1.0"
+description = "Evaluation science for long-horizon personal agents under protocol, calibration, and grader uncertainty"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Aura Yavary"}]
+keywords = ["personalization", "memory", "agents", "proactivity", "evaluation", "post-training"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+personametrica = "personalagi.cli:main"
+personal-agi-os = "personalagi.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["personalagi*", "personalbench*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

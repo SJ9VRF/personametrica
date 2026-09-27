@@ -1,0 +1,6 @@
+{
+  "benchmark": {"users": 50, "turns": 50, "seed": 7},
+  "memory": {"retrieval_top_k": 5, "confidence_floor": 0.2},
+  "proactivity": {"suggest_threshold": 0.62, "remind_threshold": 0.42},
+  "safety": {"confirm_high_stakes_irreversible": true}
+}

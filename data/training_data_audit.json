@@ -1,0 +1,18 @@
+{
+  "rows": 724,
+  "valid_rows": 724,
+  "exact_duplicate_rows": 0,
+  "unique_pairs": 724,
+  "families": {
+    "high_stakes_autonomy": 43,
+    "low_value_proactivity": 18,
+    "privacy_control": 8,
+    "reversible_assistance": 283,
+    "temporal_memory": 16,
+    "uncertainty_calibration": 356
+  },
+  "template_count": 13,
+  "reason_count": 6,
+  "family_entropy_bits": 1.6011,
+  "template_entropy_bits": 3.0099
+}

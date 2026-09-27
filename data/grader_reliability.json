@@ -1,0 +1,6125 @@
+{
+  "base_metrics": {
+    "end_state_only": {
+      "accuracy": 0.67125,
+      "false_accept_rate": 0.44804088586030666
+    },
+    "trajectory_policy": {
+      "accuracy": 0.89625,
+      "false_accept_rate": 0.141396933560477
+    },
+    "robust_trajectory": {
+      "accuracy": 1.0,
+      "false_accept_rate": 0.0
+    },
+    "evidence_aware_trajectory": {
+      "accuracy": 1.0,
+      "false_accept_rate": 0.0
+    },
+    "dense_trajectory_reward": {
+      "accuracy": 1.0,
+      "false_accept_rate": 0.0
+    }
+  },
+  "score_calibration": {
+    "end_state_only": {
+      "brier": 0.32875,
+      "ece": 0.32875
+    },
+    "trajectory_policy": {
+      "brier": 0.37925000000000003,
+      "ece": 0.50475
+    },
+    "robust_trajectory": {
+      "brier": 0.31495000000000006,
+      "ece": 0.46475
+    },
+    "evidence_aware_trajectory": {
+      "brier": 0.31495000000000006,
+      "ece": 0.46475
+    },
+    "dense_trajectory_reward": {
+      "brier": 0.29560000000000003,
+      "ece": 0.43512500000000004
+    }
+  },
+  "mutation_metrics": {
+    "benign_invariance_rate": 1.0,
+    "forged_flag_invariance_rate": 1.0,
+    "redacted_evidence_abstention_rate": 1.0,
+    "late_confirmation_detection_rate": 1.0,
+    "tool_loop_detection_rate": 1.0
+  },
+  "threshold_drift": [
+    {
+      "threshold": 0.55,
+      "accuracy": 0.575,
+      "false_accept_rate": 0.5792163543441227
+    },
+    {
+      "threshold": 0.65,
+      "accuracy": 0.575,
+      "false_accept_rate": 0.5792163543441227
+    },
+    {
+      "threshold": 0.75,
+      "accuracy": 0.67125,
+      "false_accept_rate": 0.44804088586030666
+    },
+    {
+      "threshold": 0.85,
+      "accuracy": 0.79125,
+      "false_accept_rate": 0.28449744463373083
+    },
+    {
+      "threshold": 0.95,
+      "accuracy": 0.89625,
+      "false_accept_rate": 0.141396933560477
+    },
+    {
+      "threshold": 1.0,
+      "accuracy": 0.89625,
+      "false_accept_rate": 0.141396933560477
+    }
+  ],
+  "mutation_rows": [
+    {
+      "task_id": "agent-task-000",
+      "trial_id": "agent-task-000-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-000",
+      "trial_id": "agent-task-000-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-000",
+      "trial_id": "agent-task-000-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-000",
+      "trial_id": "agent-task-000-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-000",
+      "trial_id": "agent-task-000-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-001",
+      "trial_id": "agent-task-001-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-002",
+      "trial_id": "agent-task-002-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-003",
+      "trial_id": "agent-task-003-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-004",
+      "trial_id": "agent-task-004-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-005",
+      "trial_id": "agent-task-005-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-006",
+      "trial_id": "agent-task-006-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-006",
+      "trial_id": "agent-task-006-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-006",
+      "trial_id": "agent-task-006-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-006",
+      "trial_id": "agent-task-006-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-006",
+      "trial_id": "agent-task-006-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-007",
+      "trial_id": "agent-task-007-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-008",
+      "trial_id": "agent-task-008-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-009",
+      "trial_id": "agent-task-009-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-010",
+      "trial_id": "agent-task-010-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-011",
+      "trial_id": "agent-task-011-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-012",
+      "trial_id": "agent-task-012-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-013",
+      "trial_id": "agent-task-013-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-014",
+      "trial_id": "agent-task-014-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-015",
+      "trial_id": "agent-task-015-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-016",
+      "trial_id": "agent-task-016-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-016",
+      "trial_id": "agent-task-016-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-016",
+      "trial_id": "agent-task-016-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-016",
+      "trial_id": "agent-task-016-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-016",
+      "trial_id": "agent-task-016-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-017",
+      "trial_id": "agent-task-017-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-018",
+      "trial_id": "agent-task-018-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-018",
+      "trial_id": "agent-task-018-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-018",
+      "trial_id": "agent-task-018-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-018",
+      "trial_id": "agent-task-018-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-018",
+      "trial_id": "agent-task-018-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-019",
+      "trial_id": "agent-task-019-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-020",
+      "trial_id": "agent-task-020-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-021",
+      "trial_id": "agent-task-021-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-022",
+      "trial_id": "agent-task-022-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-023",
+      "trial_id": "agent-task-023-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-024",
+      "trial_id": "agent-task-024-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-024",
+      "trial_id": "agent-task-024-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-024",
+      "trial_id": "agent-task-024-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-024",
+      "trial_id": "agent-task-024-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-024",
+      "trial_id": "agent-task-024-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-025",
+      "trial_id": "agent-task-025-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-026",
+      "trial_id": "agent-task-026-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-027",
+      "trial_id": "agent-task-027-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-028",
+      "trial_id": "agent-task-028-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-029",
+      "trial_id": "agent-task-029-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-030",
+      "trial_id": "agent-task-030-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-031",
+      "trial_id": "agent-task-031-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-032",
+      "trial_id": "agent-task-032-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-033",
+      "trial_id": "agent-task-033-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-034",
+      "trial_id": "agent-task-034-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-035",
+      "trial_id": "agent-task-035-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-036",
+      "trial_id": "agent-task-036-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-037",
+      "trial_id": "agent-task-037-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-038",
+      "trial_id": "agent-task-038-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-039",
+      "trial_id": "agent-task-039-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-040",
+      "trial_id": "agent-task-040-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-041",
+      "trial_id": "agent-task-041-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-041",
+      "trial_id": "agent-task-041-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-041",
+      "trial_id": "agent-task-041-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-041",
+      "trial_id": "agent-task-041-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-041",
+      "trial_id": "agent-task-041-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-043",
+      "trial_id": "agent-task-043-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-044",
+      "trial_id": "agent-task-044-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-045",
+      "trial_id": "agent-task-045-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-046",
+      "trial_id": "agent-task-046-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-047",
+      "trial_id": "agent-task-047-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-03",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-03",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-03",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-03",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-048",
+      "trial_id": "agent-task-048-trial-03",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-06",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-06",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-06",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-06",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-06",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-049",
+      "trial_id": "agent-task-049-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-050",
+      "trial_id": "agent-task-050-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-02",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-02",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-02",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-02",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-02",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-051",
+      "trial_id": "agent-task-051-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-04",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-04",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-04",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-04",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-04",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-052",
+      "trial_id": "agent-task-052-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-05",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-05",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-05",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-05",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-053",
+      "trial_id": "agent-task-053-trial-05",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-01",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-01",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-01",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-01",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-01",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-054",
+      "trial_id": "agent-task-054-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": true,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-055",
+      "trial_id": "agent-task-055-trial-07",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-055",
+      "trial_id": "agent-task-055-trial-07",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-055",
+      "trial_id": "agent-task-055-trial-07",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-055",
+      "trial_id": "agent-task-055-trial-07",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-055",
+      "trial_id": "agent-task-055-trial-07",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-056",
+      "trial_id": "agent-task-056-trial-00",
+      "mutation": "append_irrelevant_event",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-056",
+      "trial_id": "agent-task-056-trial-00",
+      "mutation": "forge_success_flag",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-056",
+      "trial_id": "agent-task-056-trial-00",
+      "mutation": "redact_verification_observed",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "unknown",
+      "evidence_abstained": true
+    },
+    {
+      "task_id": "agent-task-056",
+      "trial_id": "agent-task-056-trial-00",
+      "mutation": "move_confirmation_after_action",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": true,
+      "evidence_verdict": "pass",
+      "evidence_abstained": false
+    },
+    {
+      "task_id": "agent-task-056",
+      "trial_id": "agent-task-056-trial-00",
+      "mutation": "duplicate_tool_call",
+      "confirmation_required": false,
+      "base_pass": true,
+      "robust_pass": false,
+      "evidence_verdict": "fail",
+      "evidence_abstained": false
+    }
+  ],
+  "multi_trial": {
+    "task_success_rate": {
+      "mean": 0.26625,
+      "low": 0.25,
+      "high": 0.28125
+    },
+    "trial_count_sensitivity": [
+      {
+        "trials_per_task": 1,
+        "mean_estimate": 0.26702,
+        "sampling_sd": 0.04125675217464409,
+        "min": 0.17,
+        "max": 0.4
+      },
+      {
+        "trials_per_task": 2,
+        "mean_estimate": 0.26622,
+        "sampling_sd": 0.029196088779149854,
+        "min": 0.185,
+        "max": 0.355
+      },
+      {
+        "trials_per_task": 4,
+        "mean_estimate": 0.267455,
+        "sampling_sd": 0.021161532907613283,
+        "min": 0.2,
+        "max": 0.35
+      },
+      {
+        "trials_per_task": 8,
+        "mean_estimate": 0.26608,
+        "sampling_sd": 0.015447770065611413,
+        "min": 0.225,
+        "max": 0.31125
+      }
+    ],
+    "tasks": 100
+  }
+}

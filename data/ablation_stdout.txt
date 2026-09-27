@@ -1,0 +1,47 @@
+[
+  {
+    "name": "full",
+    "personalization_accuracy": 1.0,
+    "stale_memory_rate": 0.0,
+    "contradiction_rate": 0.0,
+    "proactive_precision": 1.0,
+    "autonomy_violation_rate": 0.0,
+    "goal_capture_rate": 1.0
+  },
+  {
+    "name": "no_temporal_memory",
+    "personalization_accuracy": 0.78,
+    "stale_memory_rate": 0.25,
+    "contradiction_rate": 0.0,
+    "proactive_precision": 1.0,
+    "autonomy_violation_rate": 0.0,
+    "goal_capture_rate": 1.0
+  },
+  {
+    "name": "no_contradiction_resolution",
+    "personalization_accuracy": 1.0,
+    "stale_memory_rate": 0.0,
+    "contradiction_rate": 0.3,
+    "proactive_precision": 1.0,
+    "autonomy_violation_rate": 0.0,
+    "goal_capture_rate": 1.0
+  },
+  {
+    "name": "no_proactivity_calibration",
+    "personalization_accuracy": 1.0,
+    "stale_memory_rate": 0.0,
+    "contradiction_rate": 0.0,
+    "proactive_precision": 0.72,
+    "autonomy_violation_rate": 0.2,
+    "goal_capture_rate": 1.0
+  },
+  {
+    "name": "no_goal_model",
+    "personalization_accuracy": 1.0,
+    "stale_memory_rate": 0.0,
+    "contradiction_rate": 0.0,
+    "proactive_precision": 1.0,
+    "autonomy_violation_rate": 0.0,
+    "goal_capture_rate": 0.0
+  }
+]

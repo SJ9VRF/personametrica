@@ -1,0 +1,144 @@
+{
+  "scope": "synthetic/local reward-baseline generalization audit; not evidence of LLM reward-model quality",
+  "standard_split": {
+    "sizes": {
+      "train": 582,
+      "validation": 71,
+      "test": 71
+    },
+    "metrics": {
+      "train": {
+        "accuracy": 1.0,
+        "mean_margin": 1.056339837873006,
+        "n": 582
+      },
+      "validation": {
+        "accuracy": 1.0,
+        "mean_margin": 1.0554994188727014,
+        "n": 71
+      },
+      "test": {
+        "accuracy": 1.0,
+        "mean_margin": 1.0627183585978865,
+        "n": 71
+      },
+      "calibration_test_bidirectional": {
+        "brier": 0.07186591942949828,
+        "ece": 0.26042499080814235,
+        "n": 142
+      }
+    }
+  },
+  "leakage_audit": {
+    "train_test_exact_response_pair_overlap": 4,
+    "train_validation_exact_response_pair_overlap": 4,
+    "test_unique_response_pairs": 5,
+    "test_rows_with_seen_response_pair_fraction": 0.9859154929577465
+  },
+  "leave_one_family_out": {
+    "macro_accuracy": 1.0,
+    "weighted_accuracy": 1.0,
+    "by_family": {
+      "high_stakes_autonomy": {
+        "accuracy": 1.0,
+        "mean_margin": 0.2044708864539135,
+        "n": 43,
+        "calibration_bidirectional": {
+          "brier": 0.2016546825822894,
+          "ece": 0.4490596548432433,
+          "n": 86
+        }
+      },
+      "low_value_proactivity": {
+        "accuracy": 1.0,
+        "mean_margin": 0.14490745296624416,
+        "n": 18,
+        "calibration_bidirectional": {
+          "brier": 0.21514424506562269,
+          "ece": 0.4638364009566771,
+          "n": 36
+        }
+      },
+      "privacy_control": {
+        "accuracy": 1.0,
+        "mean_margin": 0.09337159752364232,
+        "n": 8,
+        "calibration_bidirectional": {
+          "brier": 0.22722035284096584,
+          "ece": 0.4766742337802756,
+          "n": 16
+        }
+      },
+      "reversible_assistance": {
+        "accuracy": 1.0,
+        "mean_margin": 0.16592323174027343,
+        "n": 283,
+        "calibration_bidirectional": {
+          "brier": 0.21032704201150784,
+          "ece": 0.4586141185169038,
+          "n": 566
+        }
+      },
+      "temporal_memory": {
+        "accuracy": 1.0,
+        "mean_margin": 0.02975796071115533,
+        "n": 16,
+        "calibration_bidirectional": {
+          "brier": 0.2426477189258297,
+          "ece": 0.4925621777533429,
+          "n": 32
+        }
+      },
+      "uncertainty_calibration": {
+        "accuracy": 1.0,
+        "mean_margin": 0.2019226223150478,
+        "n": 356,
+        "calibration_bidirectional": {
+          "brier": 0.20222152214517844,
+          "ece": 0.4496902148611529,
+          "n": 712
+        }
+      }
+    }
+  },
+  "unseen_paraphrase_set": {
+    "overall": {
+      "accuracy": 0.6666666666666666,
+      "mean_margin": 0.20652238614387142,
+      "n": 12
+    },
+    "by_family": {
+      "high_stakes_autonomy": {
+        "accuracy": 0.5,
+        "mean_margin": 0.10669485883839824,
+        "n": 2
+      },
+      "low_value_proactivity": {
+        "accuracy": 0.5,
+        "mean_margin": 0.0856050008199909,
+        "n": 2
+      },
+      "privacy_control": {
+        "accuracy": 0.5,
+        "mean_margin": 0.046724965054950385,
+        "n": 2
+      },
+      "reversible_assistance": {
+        "accuracy": 1.0,
+        "mean_margin": 0.4612435768097827,
+        "n": 2
+      },
+      "temporal_memory": {
+        "accuracy": 0.5,
+        "mean_margin": 0.048596111950491405,
+        "n": 2
+      },
+      "uncertainty_calibration": {
+        "accuracy": 1.0,
+        "mean_margin": 0.4902698033896149,
+        "n": 2
+      }
+    },
+    "n": 12
+  }
+}

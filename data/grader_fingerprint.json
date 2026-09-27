@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "grader_bundle_sha256": "8b1c9a202b5d2ff1fcb0eaef066a51300eed1290bf3f74956c1493fb654a9b46",
+  "python": "3.13.5",
+  "files": [
+    {
+      "path": "personalbench/agent_evals/models.py",
+      "sha256": "5240e5eeabf41cf61d4a48b565f4d02c87bb0f530352ac379be3e122f77e887a",
+      "bytes": 1198
+    },
+    {
+      "path": "personalbench/agent_evals/graders.py",
+      "sha256": "8e3cf984a0da960d2120d0589224779ad0f19f9829e067cde92d99c53bb9ae38",
+      "bytes": 11531
+    },
+    {
+      "path": "personalbench/agent_evals/suite.py",
+      "sha256": "9c8375dc31cd81728fc7f5a4780e0fdfc62cd974753e0c072d78411bf992e282",
+      "bytes": 8240
+    },
+    {
+      "path": "personalbench/agent_evals/reliability.py",
+      "sha256": "3c8ee02e1e4af6c9fa8e6437253c456d299c4fb186b24f939767d7d4682b4494",
+      "bytes": 8700
+    }
+  ]
+}

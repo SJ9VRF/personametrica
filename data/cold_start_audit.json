@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "version": "4.1.0",
+  "elapsed_seconds": 2.543,
+  "python": "/tmp/personametrica-clean-jctbgcvp/venv/bin/python",
+  "isolation_mode": "stdlib-path-isolation",
+  "editable_install_completed": false,
+  "pip_available_in_fresh_venv": true,
+  "core_dependencies_declared": 0,
+  "checks": {
+    "fresh_venv_created": true,
+    "package_imports": true,
+    "module_cli_demo_exit_zero": true
+  },
+  "cli_output_tail": [
+    "      \"stakes\": 0.2,",
+    "      \"reversibility\": 0.95,",
+    "      \"autonomy_preference\": 0.44999999999999996,",
+    "      \"historical_acceptance\": 0.5,",
+    "      \"interruptibility\": 0.8",
+    "    }",
+    "  }",
+    "}"
+  ],
+  "boundary": "This runtime did not provide a usable pip installation path, so the audit used a fresh venv plus one repository .pth entry; it proves isolated imports and CLI execution, not wheel/build-backend installation. Full scientific reproduction is covered separately by scripts/reproduce.py."
+}

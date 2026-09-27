@@ -1,0 +1,195 @@
+{
+  "version": "4.1.0",
+  "source_cells": 75,
+  "variants": [
+    {
+      "name": "full-frozen-grid",
+      "dropped": null,
+      "summary": {
+        "cells": 75,
+        "winner_change_probability": 0.5156756756756756,
+        "mean_kendall_tau": 0.6987387387387387,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-calibration-out:bucket-laplace",
+      "dropped": {
+        "calibration": "bucket-laplace"
+      },
+      "summary": {
+        "cells": 50,
+        "winner_change_probability": 0.5640816326530612,
+        "mean_kendall_tau": 0.6614965986394558,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-calibration-out:isotonic-laplace",
+      "dropped": {
+        "calibration": "isotonic-laplace"
+      },
+      "summary": {
+        "cells": 50,
+        "winner_change_probability": 0.5640816326530612,
+        "mean_kendall_tau": 0.6531156462585034,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-calibration-out:native",
+      "dropped": {
+        "calibration": "native"
+      },
+      "summary": {
+        "cells": 50,
+        "winner_change_probability": 0.32653061224489793,
+        "mean_kendall_tau": 0.8954013605442177,
+        "minimum_kendall_tau": 0.7333333333333333,
+        "distinct_winners": 2
+      }
+    },
+    {
+      "name": "leave-threshold-out:0.55",
+      "dropped": {
+        "threshold": 0.55
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.5542372881355933,
+        "mean_kendall_tau": 0.680677966101695,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-threshold-out:0.65",
+      "dropped": {
+        "threshold": 0.65
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.5316384180790961,
+        "mean_kendall_tau": 0.6993596986817325,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-threshold-out:0.7",
+      "dropped": {
+        "threshold": 0.7
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.5316384180790961,
+        "mean_kendall_tau": 0.6998870056497175,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-threshold-out:0.75",
+      "dropped": {
+        "threshold": 0.75
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.5316384180790961,
+        "mean_kendall_tau": 0.6987570621468926,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-threshold-out:0.85",
+      "dropped": {
+        "threshold": 0.85
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.3813559322033898,
+        "mean_kendall_tau": 0.7293408662900188,
+        "minimum_kendall_tau": 0.3333333333333333,
+        "distinct_winners": 2
+      }
+    },
+    {
+      "name": "leave-defer-cost-out:0.0",
+      "dropped": {
+        "defer_cost": 0.0
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.523728813559322,
+        "mean_kendall_tau": 0.6974011299435028,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-defer-cost-out:0.05",
+      "dropped": {
+        "defer_cost": 0.05
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.523728813559322,
+        "mean_kendall_tau": 0.6974011299435028,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-defer-cost-out:0.1",
+      "dropped": {
+        "defer_cost": 0.1
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.5129943502824859,
+        "mean_kendall_tau": 0.7017702448210923,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-defer-cost-out:0.2",
+      "dropped": {
+        "defer_cost": 0.2
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.5129943502824859,
+        "mean_kendall_tau": 0.7017702448210923,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    },
+    {
+      "name": "leave-defer-cost-out:0.35",
+      "dropped": {
+        "defer_cost": 0.35
+      },
+      "summary": {
+        "cells": 60,
+        "winner_change_probability": 0.5129943502824859,
+        "mean_kendall_tau": 0.6923540489642185,
+        "minimum_kendall_tau": 0.2,
+        "distinct_winners": 3
+      }
+    }
+  ],
+  "robustness_summary": {
+    "perturbations": 13,
+    "min_winner_change_probability": 0.32653061224489793,
+    "max_winner_change_probability": 0.5640816326530612,
+    "min_mean_kendall_tau": 0.6531156462585034,
+    "max_mean_kendall_tau": 0.8954013605442177,
+    "perturbations_with_multiple_winners": 13
+  },
+  "interpretation": "Leave-one-level-out sensitivity tests whether the central ranking-instability result depends on one calibration family, threshold, or deferral-cost level. It does not make protocol choices iid samples."
+}

@@ -1,0 +1,131 @@
+{
+  "version": "4.1.0",
+  "release_scope": "local reproducible synthetic research prototype; no human/frontier-model performance claim",
+  "qa": {
+    "tests": 74,
+    "reproduction_steps": 67
+  },
+  "core_metrics": {
+    "personalization_accuracy": 1.0,
+    "stale_memory_rate": 0.0,
+    "contradiction_rate": 0.0,
+    "proactive_decision_accuracy": 0.865,
+    "autonomy_violation_rate": 0.0,
+    "high_stakes_confirmation_rate": 0.9411764705882353,
+    "low_confidence_clarification_rate": 0.9387755102040817,
+    "failure_detection_rate": 1.0,
+    "verified_recovery_rate": 1.0,
+    "goal_lifecycle_accuracy": 1.0,
+    "forget_success_rate": 1.0,
+    "privacy_sensitive_block_rate": 1.0,
+    "language_stress_accuracy": 0.9333333333333333
+  },
+  "training_data": {
+    "unique_pairs": 724,
+    "families": {
+      "high_stakes_autonomy": 43,
+      "low_value_proactivity": 18,
+      "privacy_control": 8,
+      "reversible_assistance": 283,
+      "temporal_memory": 16,
+      "uncertainty_calibration": 356
+    },
+    "exact_duplicate_rows": 0
+  },
+  "reward_baseline": {
+    "standard_test_accuracy": 1.0,
+    "random_label_accuracy": 0.49295774647887325,
+    "lexically_matched_contrast_accuracy": 0.5,
+    "canonical_response_pair_seen_fraction": 0.9859154929577465,
+    "unseen_paraphrase_accuracy": 0.6666666666666666,
+    "bidirectional_brier": 0.07186591942949828,
+    "bidirectional_ece": 0.26042499080814235
+  },
+  "paper_metrics": {
+    "standard_pbs_accuracy": 0.9316296296296296,
+    "standard_time_aware_accuracy": 0.906074074074074,
+    "standard_pbs_utility": 0.7682074074074073,
+    "standard_time_aware_utility": 0.5724666666666667,
+    "pbs_aurc": 0.010741279344694332,
+    "time_aware_aurc": 0.02080786220591291
+  },
+  "leaderboard_stability": {
+    "winner_counts": {
+      "time-aware-latest": 45,
+      "personal-belief-state": 27,
+      "first-mention": 3
+    },
+    "winner_change_probability": 0.5156756756756756,
+    "mean_pairwise_kendall_tau": 0.6987387387387387,
+    "minimum_pairwise_kendall_tau": 0.2,
+    "maximum_pairwise_kendall_tau": 1.0,
+    "methods_ever_winning": 3
+  },
+  "seed_uncertainty": {
+    "point": {
+      "winner_change_probability": 0.5156756756756756,
+      "mean_pairwise_kendall_tau": 0.7021021021021021,
+      "minimum_pairwise_kendall_tau": 0.2
+    },
+    "ci": {
+      "winner_change_probability": [
+        0.5066666666666667,
+        0.5383783783783784
+      ],
+      "mean_pairwise_kendall_tau": [
+        0.6915315315315316,
+        0.7202666666666667
+      ],
+      "minimum_pairwise_kendall_tau": [
+        0.2,
+        0.2
+      ]
+    },
+    "claim_support": {
+      "p_winner_change_gt_0_40": 1.0,
+      "p_mean_tau_lt_0_90": 1.0
+    },
+    "diagnostic_users_per_seed": 10
+  },
+  "protocol_grid_robustness": {
+    "perturbations": 13,
+    "min_winner_change_probability": 0.32653061224489793,
+    "max_winner_change_probability": 0.5640816326530612,
+    "min_mean_kendall_tau": 0.6531156462585034,
+    "max_mean_kendall_tau": 0.8954013605442177,
+    "perturbations_with_multiple_winners": 13
+  },
+  "external_adapter": {
+    "status": "schema-smoke-test-only",
+    "fixture_is_synthetic": true
+  },
+  "benchmark_health": {
+    "all_pass": true,
+    "counts": {
+      "dev_identities": 180,
+      "test_identities": 400,
+      "identity_overlap": 0,
+      "dev_streams": 180,
+      "test_streams": 400,
+      "full_stream_overlap": 0,
+      "standard_users": 500,
+      "standard_duplicate_full_streams": 0,
+      "standard_queries": 13500,
+      "temporary_queries": 144
+    }
+  },
+  "agent_eval": {
+    "robust_grader_accuracy": 1.0,
+    "end_state_false_accept_rate": 0.4425087108013937,
+    "benign_invariance_rate": 1.0,
+    "missing_evidence_abstention_rate": 1.0,
+    "failure_pair_semantic_duplication_rate": 0.984251968503937
+  },
+  "strongest_limitations": [
+    "synthetic users and hand-defined evaluation oracles",
+    "transparent/rule-based default state extractor rather than a frontier learned model",
+    "lexical reward baseline shows weak unseen-paraphrase semantic generalization",
+    "no executed longitudinal human study",
+    "deterministic tool sandbox rather than open-world account actions"
+  ]
+}

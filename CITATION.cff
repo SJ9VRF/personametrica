@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "PersonaMetrica"
+message: "If you use PersonaMetrica-Bench or the PersonaMetrica research substrate, please cite this release."
+type: software
+version: 4.1.0
+date-released: 2026-09-26
+license: MIT
+authors:
+  - family-names: "Yavary"
+    given-names: "Aura"

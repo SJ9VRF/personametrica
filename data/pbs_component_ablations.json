@@ -1,0 +1,71 @@
+{
+  "full": {
+    "accuracy": 0.9368518518518518,
+    "coverage": 0.8306250000000001,
+    "selective_accuracy": 0.9794073763905471,
+    "decision_utility": 0.7794745370370371,
+    "brier": 0.05757041734122823
+  },
+  "no_recency": {
+    "accuracy": 0.7870833333333334,
+    "coverage": 0.8579166666666665,
+    "selective_accuracy": 0.8418761281314413,
+    "decision_utility": 0.5723657407407408,
+    "brier": 0.14906783512931124
+  },
+  "no_provenance_reliability": {
+    "accuracy": 0.5369907407407407,
+    "coverage": 0.8296990740740741,
+    "selective_accuracy": 0.5522448824977104,
+    "decision_utility": 0.06961342592592593,
+    "brier": 0.37558191415829273
+  },
+  "no_temporary_expiry": {
+    "accuracy": 0.9317592592592593,
+    "coverage": 0.8209722222222222,
+    "selective_accuracy": 0.976627345587967,
+    "decision_utility": 0.7646898148148148,
+    "brier": 0.0608772829117503
+  },
+  "no_context_scope": {
+    "accuracy": 0.9279166666666667,
+    "coverage": 0.8287962962962963,
+    "selective_accuracy": 0.9695302914210032,
+    "decision_utility": 0.7611666666666667,
+    "brier": 0.06471030677333277
+  },
+  "no_evidence_aggregation": {
+    "accuracy": 0.47863425925925923,
+    "coverage": 0.1212037037037037,
+    "selective_accuracy": 1.0,
+    "decision_utility": 0.033324074074074075,
+    "brier": 0.1495590986851824
+  },
+  "_deltas_vs_full": {
+    "no_recency": {
+      "accuracy": -0.14976851851851847,
+      "decision_utility": -0.2071087962962963,
+      "brier": 0.09149741778808301
+    },
+    "no_provenance_reliability": {
+      "accuracy": -0.3998611111111111,
+      "decision_utility": -0.7098611111111112,
+      "brier": 0.3180114968170645
+    },
+    "no_temporary_expiry": {
+      "accuracy": -0.0050925925925925375,
+      "decision_utility": -0.014784722222222269,
+      "brier": 0.003306865570522066
+    },
+    "no_context_scope": {
+      "accuracy": -0.008935185185185102,
+      "decision_utility": -0.018307870370370405,
+      "brier": 0.007139889432104536
+    },
+    "no_evidence_aggregation": {
+      "accuracy": -0.4582175925925926,
+      "decision_utility": -0.746150462962963,
+      "brier": 0.09198868134395419
+    }
+  }
+}

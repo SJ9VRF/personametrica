@@ -1,0 +1,138 @@
+{
+  "design": {
+    "users": 180,
+    "pairs": 540,
+    "seed": 101,
+    "paired_interventions": [
+      "other-person high-confidence distractor",
+      "weak implicit conflict",
+      "explicit current update"
+    ]
+  },
+  "results": {
+    "time-aware-latest": {
+      "pairs": 540,
+      "nuisance_invariance": 1.0,
+      "weak_conflict_invariance": 0.1,
+      "explicit_update_sensitivity": 1.0,
+      "examples": [
+        {
+          "slot": "budget_style",
+          "base": "premium",
+          "expected": "premium",
+          "alternative": "save",
+          "nuisance": "premium",
+          "weak": "save",
+          "explicit": "save"
+        },
+        {
+          "slot": "work_time",
+          "base": "morning",
+          "expected": "morning",
+          "alternative": "evening",
+          "nuisance": "morning",
+          "weak": "evening",
+          "explicit": "evening"
+        },
+        {
+          "slot": "restaurant_noise",
+          "base": "quiet",
+          "expected": "quiet",
+          "alternative": "lively",
+          "nuisance": "quiet",
+          "weak": "lively",
+          "explicit": "lively"
+        },
+        {
+          "slot": "restaurant_noise",
+          "base": "lively",
+          "expected": "lively",
+          "alternative": "quiet",
+          "nuisance": "lively",
+          "weak": "quiet",
+          "explicit": "quiet"
+        },
+        {
+          "slot": "exercise_time",
+          "base": "evening",
+          "expected": "evening",
+          "alternative": "morning",
+          "nuisance": "evening",
+          "weak": "morning",
+          "explicit": "morning"
+        },
+        {
+          "slot": "planning_style",
+          "base": "early",
+          "expected": "early",
+          "alternative": "last_minute",
+          "nuisance": "early",
+          "weak": "last_minute",
+          "explicit": "last_minute"
+        }
+      ]
+    },
+    "personal-belief-state": {
+      "pairs": 540,
+      "nuisance_invariance": 0.9796296296296296,
+      "weak_conflict_invariance": 0.6444444444444445,
+      "explicit_update_sensitivity": 0.9925925925925926,
+      "examples": [
+        {
+          "slot": "restaurant_noise",
+          "base": "quiet",
+          "expected": "quiet",
+          "alternative": "lively",
+          "nuisance": "quiet",
+          "weak": "lively",
+          "explicit": "lively"
+        },
+        {
+          "slot": "budget_style",
+          "base": "save",
+          "expected": "save",
+          "alternative": "premium",
+          "nuisance": "save",
+          "weak": "premium",
+          "explicit": "premium"
+        },
+        {
+          "slot": "budget_style",
+          "base": "save",
+          "expected": "save",
+          "alternative": "premium",
+          "nuisance": "premium",
+          "weak": "premium",
+          "explicit": "premium"
+        },
+        {
+          "slot": "travel_pace",
+          "base": "structured",
+          "expected": "structured",
+          "alternative": "spontaneous",
+          "nuisance": "spontaneous",
+          "weak": "spontaneous",
+          "explicit": "spontaneous"
+        },
+        {
+          "slot": "planning_style",
+          "base": "early",
+          "expected": "early",
+          "alternative": "last_minute",
+          "nuisance": "early",
+          "weak": "last_minute",
+          "explicit": "last_minute"
+        },
+        {
+          "slot": "notification_style",
+          "base": "batch",
+          "expected": "batch",
+          "alternative": "immediate",
+          "nuisance": "batch",
+          "weak": "immediate",
+          "explicit": "immediate"
+        }
+      ]
+    }
+  }
+}

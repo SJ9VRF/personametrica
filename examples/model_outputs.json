@@ -1,0 +1,16 @@
+{
+  "I prefer deep technical explanations.": {
+    "memories": [
+      {
+        "key": "preference.response_detail.technical",
+        "value": "detailed",
+        "confidence": 0.91,
+        "source": "inferred",
+        "context": {"domain": "technical"}
+      }
+    ]
+  },
+  "My goal is ship the demo this week.": {
+    "goals": ["ship the demo this week"]
+  }
+}

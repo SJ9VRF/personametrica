@@ -1,0 +1,167 @@
+{
+  "seeds": [
+    3,
+    7,
+    11,
+    19,
+    29,
+    43,
+    59,
+    71,
+    89,
+    101
+  ],
+  "paired_effects": {
+    "temporal_personalization_gain": {
+      "mean": 0.5816363636363636,
+      "ci95": [
+        0.5581818181818182,
+        0.6034545454545455
+      ]
+    },
+    "temporal_stale_memory_reduction": {
+      "mean": 0.5816363636363636,
+      "ci95": [
+        0.5581818181818182,
+        0.6034545454545455
+      ]
+    },
+    "conflict_resolution_gain": {
+      "mean": 0.799,
+      "ci95": [
+        0.779,
+        0.8220000000000001
+      ]
+    },
+    "proactivity_accuracy_gain": {
+      "mean": 0.7085,
+      "ci95": [
+        0.6910000000000001,
+        0.7264999999999999
+      ]
+    },
+    "verification_failure_detection_gain": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "privacy_sensitive_block_gain": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "goal_lifecycle_gain": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 3,
+      "temporal_personalization_gain": 0.5836363636363637,
+      "temporal_stale_memory_reduction": 0.5836363636363636,
+      "conflict_resolution_gain": 0.79,
+      "proactivity_accuracy_gain": 0.675,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 7,
+      "temporal_personalization_gain": 0.6290909090909091,
+      "temporal_stale_memory_reduction": 0.629090909090909,
+      "conflict_resolution_gain": 0.82,
+      "proactivity_accuracy_gain": 0.695,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 11,
+      "temporal_personalization_gain": 0.5581818181818182,
+      "temporal_stale_memory_reduction": 0.5581818181818182,
+      "conflict_resolution_gain": 0.77,
+      "proactivity_accuracy_gain": 0.74,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 19,
+      "temporal_personalization_gain": 0.510909090909091,
+      "temporal_stale_memory_reduction": 0.510909090909091,
+      "conflict_resolution_gain": 0.77,
+      "proactivity_accuracy_gain": 0.6799999999999999,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 29,
+      "temporal_personalization_gain": 0.5909090909090909,
+      "temporal_stale_memory_reduction": 0.5909090909090909,
+      "conflict_resolution_gain": 0.79,
+      "proactivity_accuracy_gain": 0.745,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 43,
+      "temporal_personalization_gain": 0.5745454545454545,
+      "temporal_stale_memory_reduction": 0.5745454545454546,
+      "conflict_resolution_gain": 0.79,
+      "proactivity_accuracy_gain": 0.6799999999999999,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 59,
+      "temporal_personalization_gain": 0.6181818181818182,
+      "temporal_stale_memory_reduction": 0.6181818181818182,
+      "conflict_resolution_gain": 0.87,
+      "proactivity_accuracy_gain": 0.74,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 71,
+      "temporal_personalization_gain": 0.5345454545454545,
+      "temporal_stale_memory_reduction": 0.5345454545454545,
+      "conflict_resolution_gain": 0.75,
+      "proactivity_accuracy_gain": 0.745,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 89,
+      "temporal_personalization_gain": 0.5927272727272728,
+      "temporal_stale_memory_reduction": 0.5927272727272728,
+      "conflict_resolution_gain": 0.79,
+      "proactivity_accuracy_gain": 0.685,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    },
+    {
+      "seed": 101,
+      "temporal_personalization_gain": 0.6236363636363637,
+      "temporal_stale_memory_reduction": 0.6236363636363635,
+      "conflict_resolution_gain": 0.85,
+      "proactivity_accuracy_gain": 0.7,
+      "verification_failure_detection_gain": 1.0,
+      "privacy_sensitive_block_gain": 1.0,
+      "goal_lifecycle_gain": 1.0
+    }
+  ]
+}

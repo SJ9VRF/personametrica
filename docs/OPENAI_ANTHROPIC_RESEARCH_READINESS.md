@@ -1,0 +1,6 @@
+
+## v3.8 research-taste hardening
+
+The release now includes a **frozen protocol registry**, a 75-cell **Protocol Stability Matrix**, and a **full six-system leaderboard-stability audit**. This addresses a common frontier-eval failure mode: choosing the metric threshold, confidence transform, intervention cost, or even the leaderboard narrative after seeing test outcomes. In v3.8, two protocol cells choose different winners with probability 0.516 and complete-ranking Kendall tau falls as low as 0.20. The registry is content-fingerprinted and release-gated. It is explicitly described as a repository-level protocol lock rather than an externally timestamped preregistration.
+
+The novelty audit was also updated for September 2026 work on long-horizon safety calibration, trajectory attribution, ranking stability, disagreement-aware evaluation, and judge rank reversal. As a result, trajectory attacks and rank instability are treated as prior-art-aware supporting methodology rather than standalone novelty claims. The remaining research delta is the coupling of **evolving personal state + confidence-gated action + protocol-sensitive ranking + evaluator validity + counterfactual state interventions**.

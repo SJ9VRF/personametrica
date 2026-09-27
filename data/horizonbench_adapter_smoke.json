@@ -1,0 +1,31 @@
+{
+  "version": "4.1.0",
+  "status": "schema-smoke-test-only",
+  "source_schema": "HorizonBench official evaluate.py JSONL result schema",
+  "fixture_is_synthetic": true,
+  "models": {
+    "fixture-model-a": {
+      "n": 6,
+      "accuracy": 0.6666666666666666,
+      "evolved_n": 3,
+      "evolved_accuracy": 0.6666666666666666,
+      "static_n": 3,
+      "static_accuracy": 0.6666666666666666,
+      "confidence_coverage": 1.0,
+      "brier": 0.17238333333333333,
+      "utility_t070_c010": 0.3
+    },
+    "fixture-model-b": {
+      "n": 6,
+      "accuracy": 0.6666666666666666,
+      "evolved_n": 3,
+      "evolved_accuracy": 0.6666666666666666,
+      "static_n": 3,
+      "static_accuracy": 0.6666666666666666,
+      "confidence_coverage": 1.0,
+      "brier": 0.1673,
+      "utility_t070_c010": 0.6333333333333333
+    }
+  },
+  "claim_boundary": "These fixture scores are not HorizonBench model results. The adapter is executable infrastructure awaiting real official result JSONL files."
+}

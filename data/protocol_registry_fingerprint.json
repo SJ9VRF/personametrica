@@ -1,0 +1,7 @@
+{
+  "registry_path": "configs/protocol_registry.json",
+  "sha256": "aa026c8b86af4139b4f75f03c9f4d445b63065f949b429f476295f70835e121b",
+  "release": "4.1.0",
+  "status": "frozen-release-protocol",
+  "note": "This is a repository-level protocol lock, not an externally timestamped preregistration."
+}

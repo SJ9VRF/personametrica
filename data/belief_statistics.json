@@ -1,0 +1,182 @@
+{
+  "runs": [
+    {
+      "seed": 10,
+      "utility_gain_vs_trusted": 0.2987878787878788,
+      "accuracy_delta_vs_trusted": 0.07306397306397305,
+      "selective_gain_vs_trusted": 0.06668777233759693,
+      "brier_reduction_vs_trusted": 0.06746302938288909,
+      "utility_gain_vs_time_aware": 0.20627946127946128,
+      "accuracy_delta_vs_time_aware": 0.020370370370370372,
+      "selective_gain_vs_time_aware": -0.023134178233755742,
+      "brier_reduction_vs_time_aware": 0.01890153106639078
+    },
+    {
+      "seed": 11,
+      "utility_gain_vs_trusted": 0.2908754208754208,
+      "accuracy_delta_vs_trusted": 0.07457912457912452,
+      "selective_gain_vs_trusted": 0.06440735979212275,
+      "brier_reduction_vs_trusted": 0.06559718576209772,
+      "utility_gain_vs_time_aware": 0.20259259259259255,
+      "accuracy_delta_vs_time_aware": 0.025084175084175042,
+      "selective_gain_vs_time_aware": -0.022271714922049046,
+      "brier_reduction_vs_time_aware": 0.01924841471832666
+    },
+    {
+      "seed": 12,
+      "utility_gain_vs_trusted": 0.29609427609427613,
+      "accuracy_delta_vs_trusted": 0.07441077441077437,
+      "selective_gain_vs_trusted": 0.06699445762913869,
+      "brier_reduction_vs_trusted": 0.06790040721814977,
+      "utility_gain_vs_time_aware": 0.1993602693602694,
+      "accuracy_delta_vs_time_aware": 0.02003367003367007,
+      "selective_gain_vs_time_aware": -0.02275931520644514,
+      "brier_reduction_vs_time_aware": 0.01826370688144944
+    },
+    {
+      "seed": 13,
+      "utility_gain_vs_trusted": 0.3053872053872055,
+      "accuracy_delta_vs_trusted": 0.07154882154882147,
+      "selective_gain_vs_trusted": 0.07461068618309341,
+      "brier_reduction_vs_trusted": 0.06881579747698344,
+      "utility_gain_vs_time_aware": 0.20792929292929296,
+      "accuracy_delta_vs_time_aware": 0.01565656565656559,
+      "selective_gain_vs_time_aware": -0.01979398101393659,
+      "brier_reduction_vs_time_aware": 0.017490208251394232
+    },
+    {
+      "seed": 14,
+      "utility_gain_vs_trusted": 0.3067340067340068,
+      "accuracy_delta_vs_trusted": 0.08400673400673397,
+      "selective_gain_vs_trusted": 0.07571788165531856,
+      "brier_reduction_vs_trusted": 0.07283032691002278,
+      "utility_gain_vs_time_aware": 0.2126767676767678,
+      "accuracy_delta_vs_time_aware": 0.028787878787878807,
+      "selective_gain_vs_time_aware": -0.01731160896130346,
+      "brier_reduction_vs_time_aware": 0.02277325620295207
+    },
+    {
+      "seed": 15,
+      "utility_gain_vs_trusted": 0.2975252525252525,
+      "accuracy_delta_vs_trusted": 0.07659932659932656,
+      "selective_gain_vs_trusted": 0.06560519511223728,
+      "brier_reduction_vs_trusted": 0.06858816148550673,
+      "utility_gain_vs_time_aware": 0.20658249158249153,
+      "accuracy_delta_vs_time_aware": 0.024242424242424176,
+      "selective_gain_vs_time_aware": -0.025254582484725008,
+      "brier_reduction_vs_time_aware": 0.020542572259917492
+    },
+    {
+      "seed": 16,
+      "utility_gain_vs_trusted": 0.3262794612794612,
+      "accuracy_delta_vs_trusted": 0.0760942760942761,
+      "selective_gain_vs_trusted": 0.0765246728003266,
+      "brier_reduction_vs_trusted": 0.072332057528747,
+      "utility_gain_vs_time_aware": 0.23425925925925917,
+      "accuracy_delta_vs_time_aware": 0.02138047138047139,
+      "selective_gain_vs_time_aware": -0.017691998391636488,
+      "brier_reduction_vs_time_aware": 0.022639784801474265
+    },
+    {
+      "seed": 17,
+      "utility_gain_vs_trusted": 0.3055892255892256,
+      "accuracy_delta_vs_trusted": 0.07373737373737377,
+      "selective_gain_vs_trusted": 0.06656651130532032,
+      "brier_reduction_vs_trusted": 0.06733351433505233,
+      "utility_gain_vs_time_aware": 0.21880471380471378,
+      "accuracy_delta_vs_time_aware": 0.024242424242424288,
+      "selective_gain_vs_time_aware": -0.020685459338876444,
+      "brier_reduction_vs_time_aware": 0.021469036220574216
+    },
+    {
+      "seed": 18,
+      "utility_gain_vs_trusted": 0.2977777777777777,
+      "accuracy_delta_vs_trusted": 0.08080808080808077,
+      "selective_gain_vs_trusted": 0.07797744761309766,
+      "brier_reduction_vs_trusted": 0.07102081502330793,
+      "utility_gain_vs_time_aware": 0.20626262626262626,
+      "accuracy_delta_vs_time_aware": 0.027272727272727226,
+      "selective_gain_vs_time_aware": -0.01564751904467776,
+      "brier_reduction_vs_time_aware": 0.0214257140132069
+    },
+    {
+      "seed": 19,
+      "utility_gain_vs_trusted": 0.29826599326599335,
+      "accuracy_delta_vs_trusted": 0.08484848484848484,
+      "selective_gain_vs_trusted": 0.07818391226769505,
+      "brier_reduction_vs_trusted": 0.07176748736604337,
+      "utility_gain_vs_time_aware": 0.2030134680134681,
+      "accuracy_delta_vs_time_aware": 0.02794612794612794,
+      "selective_gain_vs_time_aware": -0.01716738197424894,
+      "brier_reduction_vs_time_aware": 0.020115281978837996
+    }
+  ],
+  "summary": {
+    "utility_gain_vs_trusted": {
+      "mean": 0.30233164983164984,
+      "stdev": 0.00975194416122484,
+      "bootstrap_95_ci": [
+        0.297459595959596,
+        0.30846127946127944
+      ]
+    },
+    "accuracy_delta_vs_trusted": {
+      "mean": 0.07696969696969694,
+      "stdev": 0.004649770832613917,
+      "bootstrap_95_ci": [
+        0.0744444444444444,
+        0.0798148148148148
+      ]
+    },
+    "selective_gain_vs_trusted": {
+      "mean": 0.07132758966959472,
+      "stdev": 0.0056950272276669565,
+      "bootstrap_95_ci": [
+        0.06805110734076471,
+        0.07466680295261319
+      ]
+    },
+    "brier_reduction_vs_trusted": {
+      "mean": 0.06936487824888002,
+      "stdev": 0.002456659286092827,
+      "bootstrap_95_ci": [
+        0.0679982671537088,
+        0.07079998149751952
+      ]
+    },
+    "utility_gain_vs_time_aware": {
+      "mean": 0.20977609427609428,
+      "stdev": 0.010183653222573622,
+      "bootstrap_95_ci": [
+        0.2046851851851852,
+        0.21617340067340068
+      ]
+    },
+    "accuracy_delta_vs_time_aware": {
+      "mean": 0.02350168350168349,
+      "stdev": 0.004128452032379668,
+      "bootstrap_95_ci": [
+        0.020993265993265998,
+        0.025858585858585838
+      ]
+    },
+    "selective_gain_vs_time_aware": {
+      "mean": -0.020171773957165462,
+      "stdev": 0.003161356739984003,
+      "bootstrap_95_ci": [
+        -0.02202150541291007,
+        -0.018346042253594652
+      ]
+    },
+    "brier_reduction_vs_time_aware": {
+      "mean": 0.020286950639452406,
+      "stdev": 0.0018079974304247872,
+      "bootstrap_95_ci": [
+        0.01922676420695066,
+        0.02134795998079672
+      ]
+    }
+  },
+  "test_seeds": "10-19",
+  "selection": "PBS hyperparameters fixed from development seeds 1-3"
+}

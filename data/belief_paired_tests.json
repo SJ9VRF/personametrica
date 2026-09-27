@@ -1,0 +1,42 @@
+{
+  "standard_utility": {
+    "n": 10,
+    "mean": 0.20977609427609428,
+    "positive": 10,
+    "negative": 0,
+    "exact_sign_test_p": 0.001953125,
+    "paired_signflip_p": 0.001953125
+  },
+  "standard_accuracy": {
+    "n": 10,
+    "mean": 0.02350168350168349,
+    "positive": 10,
+    "negative": 0,
+    "exact_sign_test_p": 0.001953125,
+    "paired_signflip_p": 0.001953125
+  },
+  "long_utility": {
+    "n": 10,
+    "mean": 0.2838611111111111,
+    "positive": 10,
+    "negative": 0,
+    "exact_sign_test_p": 0.001953125,
+    "paired_signflip_p": 0.001953125
+  },
+  "long_accuracy": {
+    "n": 10,
+    "mean": -0.01421296296296296,
+    "positive": 0,
+    "negative": 10,
+    "exact_sign_test_p": 0.001953125,
+    "paired_signflip_p": 0.001953125
+  },
+  "long_brier": {
+    "n": 10,
+    "mean": 0.015502067234248443,
+    "positive": 10,
+    "negative": 0,
+    "exact_sign_test_p": 0.001953125,
+    "paired_signflip_p": 0.001953125
+  }
+}

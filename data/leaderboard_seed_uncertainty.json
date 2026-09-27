@@ -1,0 +1,582 @@
+{
+  "version": "4.1.0",
+  "bootstrap_unit": "long-horizon test seed",
+  "bootstrap_replicates": 2000,
+  "bootstrap_rng_seed": 39017,
+  "development_seeds": [
+    1,
+    2,
+    3
+  ],
+  "test_seeds": [
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "diagnostic_users_per_seed": 10,
+  "protocol_cells": 75,
+  "point_estimate": {
+    "winner_change_probability": 0.5156756756756756,
+    "mean_pairwise_kendall_tau": 0.7021021021021021,
+    "minimum_pairwise_kendall_tau": 0.2
+  },
+  "bootstrap_95_ci": {
+    "winner_change_probability": [
+      0.5066666666666667,
+      0.5383783783783784
+    ],
+    "mean_pairwise_kendall_tau": [
+      0.6915315315315316,
+      0.7202666666666667
+    ],
+    "minimum_pairwise_kendall_tau": [
+      0.2,
+      0.2
+    ]
+  },
+  "bootstrap_claim_support": {
+    "p_winner_change_gt_0_40": 1.0,
+    "p_mean_tau_lt_0_90": 1.0
+  },
+  "cell_winner_stability": {
+    "mean_original_winner_support": 0.9866133333333333,
+    "minimum_original_winner_support": 0.619,
+    "cells_support_ge_0_95": 71,
+    "cells_support_ge_0_80": 73
+  },
+  "cells": [
+    {
+      "calibration": "native",
+      "threshold": 0.55,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9345
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.55,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9795
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.55,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9915
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.55,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9995
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.55,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.65,
+      "defer_cost": 0.0,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.65,
+      "defer_cost": 0.05,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.65,
+      "defer_cost": 0.1,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.65,
+      "defer_cost": 0.2,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.65,
+      "defer_cost": 0.35,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.7,
+      "defer_cost": 0.0,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.7,
+      "defer_cost": 0.05,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.7,
+      "defer_cost": 0.1,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.7,
+      "defer_cost": 0.2,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.7,
+      "defer_cost": 0.35,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.75,
+      "defer_cost": 0.0,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.75,
+      "defer_cost": 0.05,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.75,
+      "defer_cost": 0.1,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.75,
+      "defer_cost": 0.2,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.75,
+      "defer_cost": 0.35,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 0.7725
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.85,
+      "defer_cost": 0.0,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.85,
+      "defer_cost": 0.05,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 0.919
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.85,
+      "defer_cost": 0.1,
+      "winner": "first-mention",
+      "original_winner_bootstrap_support": 0.619
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.85,
+      "defer_cost": 0.2,
+      "winner": "first-mention",
+      "original_winner_bootstrap_support": 0.9995
+    },
+    {
+      "calibration": "native",
+      "threshold": 0.85,
+      "defer_cost": 0.35,
+      "winner": "first-mention",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.954
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.974
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.988
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.999
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.966
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9925
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.999
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.996
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9995
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.0,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.05,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.1,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.2,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "bucket-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.35,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9655
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.992
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.999
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.55,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.9655
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.992
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 0.999
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.65,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.7,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.0,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.05,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.1,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.2,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.75,
+      "defer_cost": 0.35,
+      "winner": "time-aware-latest",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.0,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.05,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.1,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.2,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    },
+    {
+      "calibration": "isotonic-laplace",
+      "threshold": 0.85,
+      "defer_cost": 0.35,
+      "winner": "personal-belief-state",
+      "original_winner_bootstrap_support": 1.0
+    }
+  ],
+  "interpretation": "Seed bootstrap quantifies sampling uncertainty for the fixed synthetic generator and frozen protocol grid. It does not establish population-level human or frontier-model uncertainty."
+}

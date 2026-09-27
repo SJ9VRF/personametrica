@@ -1,0 +1,707 @@
+[
+  {
+    "title": "Learn",
+    "input": "I prefer working on talks in the evening.",
+    "state": {
+      "user_id": "homepage-demo",
+      "memories": [
+        {
+          "key": "preference.work_time",
+          "value": "evening",
+          "content": "I prefer working on talks in the evening.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.998737+00:00",
+          "updated_at": "2026-09-26T22:58:38.998741+00:00",
+          "valid_from": "2026-09-26T22:58:38.998415+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule"
+          },
+          "supersedes": null,
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "2f136c97-13a9-4316-808e-eb3491204551"
+        }
+      ],
+      "memory_history": [
+        {
+          "key": "preference.work_time",
+          "value": "evening",
+          "content": "I prefer working on talks in the evening.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.998737+00:00",
+          "updated_at": "2026-09-26T22:58:38.998741+00:00",
+          "valid_from": "2026-09-26T22:58:38.998415+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule"
+          },
+          "supersedes": null,
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "2f136c97-13a9-4316-808e-eb3491204551"
+        }
+      ],
+      "memory_conflicts": {},
+      "memory_audit": [
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "2f136c97-13a9-4316-808e-eb3491204551",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.998771+00:00",
+          "audit_id": "95d2565c-e03c-4bbe-a2e0-30e5fb932810"
+        }
+      ],
+      "goals": [],
+      "behavior": {
+        "verbosity": 0.5,
+        "directness": 0.5,
+        "warmth": 0.5,
+        "initiative": 0.5
+      },
+      "autonomy_preference": 0.5,
+      "config": {
+        "memory_enabled": true,
+        "memory_update_policy": "latest",
+        "contradiction_resolution": true,
+        "confidence_tracking": true,
+        "goal_model": true,
+        "calibrated_proactivity": true,
+        "outcome_verification": true,
+        "privacy_guard": true
+      }
+    }
+  },
+  {
+    "title": "Goal",
+    "input": "My goal is finish the conference deck by Friday.",
+    "state": {
+      "user_id": "homepage-demo",
+      "memories": [
+        {
+          "key": "preference.work_time",
+          "value": "evening",
+          "content": "I prefer working on talks in the evening.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.998737+00:00",
+          "updated_at": "2026-09-26T22:58:38.998741+00:00",
+          "valid_from": "2026-09-26T22:58:38.998415+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule"
+          },
+          "supersedes": null,
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "2f136c97-13a9-4316-808e-eb3491204551"
+        }
+      ],
+      "memory_history": [
+        {
+          "key": "preference.work_time",
+          "value": "evening",
+          "content": "I prefer working on talks in the evening.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.998737+00:00",
+          "updated_at": "2026-09-26T22:58:38.998741+00:00",
+          "valid_from": "2026-09-26T22:58:38.998415+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule"
+          },
+          "supersedes": null,
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "2f136c97-13a9-4316-808e-eb3491204551"
+        }
+      ],
+      "memory_conflicts": {},
+      "memory_audit": [
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "2f136c97-13a9-4316-808e-eb3491204551",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.998771+00:00",
+          "audit_id": "95d2565c-e03c-4bbe-a2e0-30e5fb932810"
+        }
+      ],
+      "goals": [
+        {
+          "description": "finish the conference deck by Friday",
+          "user_id": "homepage-demo",
+          "priority": 0.7,
+          "deadline": "Friday",
+          "status": "active",
+          "confidence": 1.0,
+          "parent_goal_id": null,
+          "subtasks": [],
+          "progress": 0.0,
+          "blockers": [],
+          "dependencies": [],
+          "goal_id": "95077985-12e0-435c-a063-c4933bb8b4ef",
+          "created_at": "2026-09-26T22:58:38.999185+00:00"
+        }
+      ],
+      "behavior": {
+        "verbosity": 0.5,
+        "directness": 0.5,
+        "warmth": 0.5,
+        "initiative": 0.5
+      },
+      "autonomy_preference": 0.5,
+      "config": {
+        "memory_enabled": true,
+        "memory_update_policy": "latest",
+        "contradiction_resolution": true,
+        "confidence_tracking": true,
+        "goal_model": true,
+        "calibrated_proactivity": true,
+        "outcome_verification": true,
+        "privacy_guard": true
+      }
+    }
+  },
+  {
+    "title": "Update",
+    "input": "That changed; I prefer mornings now.",
+    "state": {
+      "user_id": "homepage-demo",
+      "memories": [
+        {
+          "key": "preference.work_time",
+          "value": "morning",
+          "content": "That changed; I prefer mornings now.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.999256+00:00",
+          "updated_at": "2026-09-26T22:58:38.999258+00:00",
+          "valid_from": "2026-09-26T22:58:38.999235+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule",
+            "inherited_context": true
+          },
+          "supersedes": "2f136c97-13a9-4316-808e-eb3491204551",
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+        }
+      ],
+      "memory_history": [
+        {
+          "key": "preference.work_time",
+          "value": "evening",
+          "content": "I prefer working on talks in the evening.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.998737+00:00",
+          "updated_at": "2026-09-26T22:58:38.999256+00:00",
+          "valid_from": "2026-09-26T22:58:38.998415+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule"
+          },
+          "supersedes": null,
+          "contradicted_by": [
+            "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+          ],
+          "status": "superseded",
+          "memory_id": "2f136c97-13a9-4316-808e-eb3491204551"
+        },
+        {
+          "key": "preference.work_time",
+          "value": "morning",
+          "content": "That changed; I prefer mornings now.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.999256+00:00",
+          "updated_at": "2026-09-26T22:58:38.999258+00:00",
+          "valid_from": "2026-09-26T22:58:38.999235+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule",
+            "inherited_context": true
+          },
+          "supersedes": "2f136c97-13a9-4316-808e-eb3491204551",
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+        }
+      ],
+      "memory_conflicts": {},
+      "memory_audit": [
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "2f136c97-13a9-4316-808e-eb3491204551",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.998771+00:00",
+          "audit_id": "95d2565c-e03c-4bbe-a2e0-30e5fb932810"
+        },
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.999278+00:00",
+          "audit_id": "ce004b64-d6b8-47fb-b2b0-2598d0a2c53e"
+        },
+        {
+          "event_type": "memory_supersede",
+          "user_id": "homepage-demo",
+          "subject_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "supersedes": "2f136c97-13a9-4316-808e-eb3491204551"
+          },
+          "timestamp": "2026-09-26T22:58:38.999284+00:00",
+          "audit_id": "590873e0-b735-4238-a12d-7a2dfdde2192"
+        }
+      ],
+      "goals": [
+        {
+          "description": "finish the conference deck by Friday",
+          "user_id": "homepage-demo",
+          "priority": 0.7,
+          "deadline": "Friday",
+          "status": "active",
+          "confidence": 1.0,
+          "parent_goal_id": null,
+          "subtasks": [],
+          "progress": 0.0,
+          "blockers": [],
+          "dependencies": [],
+          "goal_id": "95077985-12e0-435c-a063-c4933bb8b4ef",
+          "created_at": "2026-09-26T22:58:38.999185+00:00"
+        }
+      ],
+      "behavior": {
+        "verbosity": 0.5,
+        "directness": 0.5,
+        "warmth": 0.5,
+        "initiative": 0.5
+      },
+      "autonomy_preference": 0.5,
+      "config": {
+        "memory_enabled": true,
+        "memory_update_policy": "latest",
+        "contradiction_resolution": true,
+        "confidence_tracking": true,
+        "goal_model": true,
+        "calibrated_proactivity": true,
+        "outcome_verification": true,
+        "privacy_guard": true
+      }
+    }
+  },
+  {
+    "title": "Decide",
+    "input": "Deadline is near; should the agent intervene?",
+    "decision": {
+      "action": "suggest",
+      "score": 0.718,
+      "confidence": 0.91,
+      "factors": {
+        "goal_relevance": 0.96,
+        "urgency": 0.9,
+        "confidence": 0.91,
+        "stakes": 0.2,
+        "reversibility": 0.95,
+        "autonomy_preference": 0.5,
+        "historical_acceptance": 0.5,
+        "interruptibility": 0.8
+      },
+      "rationale": [
+        "goal relevance=0.96",
+        "urgency=0.90",
+        "confidence=0.91",
+        "stakes=0.20",
+        "reversibility=0.95",
+        "autonomy preference=0.50",
+        "historical acceptance=0.50",
+        "interruptibility=0.80"
+      ]
+    },
+    "state": {
+      "user_id": "homepage-demo",
+      "memories": [
+        {
+          "key": "preference.work_time",
+          "value": "morning",
+          "content": "That changed; I prefer mornings now.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.999256+00:00",
+          "updated_at": "2026-09-26T22:58:38.999258+00:00",
+          "valid_from": "2026-09-26T22:58:38.999235+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule",
+            "inherited_context": true
+          },
+          "supersedes": "2f136c97-13a9-4316-808e-eb3491204551",
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+        }
+      ],
+      "memory_history": [
+        {
+          "key": "preference.work_time",
+          "value": "evening",
+          "content": "I prefer working on talks in the evening.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.998737+00:00",
+          "updated_at": "2026-09-26T22:58:38.999256+00:00",
+          "valid_from": "2026-09-26T22:58:38.998415+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule"
+          },
+          "supersedes": null,
+          "contradicted_by": [
+            "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+          ],
+          "status": "superseded",
+          "memory_id": "2f136c97-13a9-4316-808e-eb3491204551"
+        },
+        {
+          "key": "preference.work_time",
+          "value": "morning",
+          "content": "That changed; I prefer mornings now.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.999256+00:00",
+          "updated_at": "2026-09-26T22:58:38.999258+00:00",
+          "valid_from": "2026-09-26T22:58:38.999235+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule",
+            "inherited_context": true
+          },
+          "supersedes": "2f136c97-13a9-4316-808e-eb3491204551",
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+        }
+      ],
+      "memory_conflicts": {},
+      "memory_audit": [
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "2f136c97-13a9-4316-808e-eb3491204551",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.998771+00:00",
+          "audit_id": "95d2565c-e03c-4bbe-a2e0-30e5fb932810"
+        },
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.999278+00:00",
+          "audit_id": "ce004b64-d6b8-47fb-b2b0-2598d0a2c53e"
+        },
+        {
+          "event_type": "memory_supersede",
+          "user_id": "homepage-demo",
+          "subject_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "supersedes": "2f136c97-13a9-4316-808e-eb3491204551"
+          },
+          "timestamp": "2026-09-26T22:58:38.999284+00:00",
+          "audit_id": "590873e0-b735-4238-a12d-7a2dfdde2192"
+        }
+      ],
+      "goals": [
+        {
+          "description": "finish the conference deck by Friday",
+          "user_id": "homepage-demo",
+          "priority": 0.7,
+          "deadline": "Friday",
+          "status": "active",
+          "confidence": 1.0,
+          "parent_goal_id": null,
+          "subtasks": [],
+          "progress": 0.0,
+          "blockers": [],
+          "dependencies": [],
+          "goal_id": "95077985-12e0-435c-a063-c4933bb8b4ef",
+          "created_at": "2026-09-26T22:58:38.999185+00:00"
+        }
+      ],
+      "behavior": {
+        "verbosity": 0.5,
+        "directness": 0.5,
+        "warmth": 0.5,
+        "initiative": 0.5
+      },
+      "autonomy_preference": 0.5,
+      "config": {
+        "memory_enabled": true,
+        "memory_update_policy": "latest",
+        "contradiction_resolution": true,
+        "confidence_tracking": true,
+        "goal_model": true,
+        "calibrated_proactivity": true,
+        "outcome_verification": true,
+        "privacy_guard": true
+      }
+    }
+  },
+  {
+    "title": "Act + recover",
+    "input": "A reminder is created at the wrong time. Verify the mismatch, correct the payload, retry once, and verify again.",
+    "tool_result": {
+      "tool": "reminders",
+      "action": "create",
+      "success": true,
+      "payload": {
+        "id": "2",
+        "text": "Work on conference deck",
+        "when": "tomorrow morning"
+      },
+      "error": null
+    },
+    "verification": {
+      "success": true,
+      "expected": {
+        "text": "Work on conference deck",
+        "when": "tomorrow morning"
+      },
+      "observed": {
+        "id": "2",
+        "text": "Work on conference deck",
+        "when": "tomorrow morning"
+      },
+      "discrepancies": []
+    },
+    "recovery": {
+      "recovered": true,
+      "attempts": 2,
+      "first_discrepancies": [
+        "when: expected='tomorrow morning', observed='tomorrow evening'"
+      ]
+    },
+    "state": {
+      "user_id": "homepage-demo",
+      "memories": [
+        {
+          "key": "preference.work_time",
+          "value": "morning",
+          "content": "That changed; I prefer mornings now.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.999256+00:00",
+          "updated_at": "2026-09-26T22:58:38.999258+00:00",
+          "valid_from": "2026-09-26T22:58:38.999235+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule",
+            "inherited_context": true
+          },
+          "supersedes": "2f136c97-13a9-4316-808e-eb3491204551",
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+        }
+      ],
+      "memory_history": [
+        {
+          "key": "preference.work_time",
+          "value": "evening",
+          "content": "I prefer working on talks in the evening.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.998737+00:00",
+          "updated_at": "2026-09-26T22:58:38.999256+00:00",
+          "valid_from": "2026-09-26T22:58:38.998415+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule"
+          },
+          "supersedes": null,
+          "contradicted_by": [
+            "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+          ],
+          "status": "superseded",
+          "memory_id": "2f136c97-13a9-4316-808e-eb3491204551"
+        },
+        {
+          "key": "preference.work_time",
+          "value": "morning",
+          "content": "That changed; I prefer mornings now.",
+          "memory_type": "preference",
+          "source": "explicit",
+          "confidence": 0.97,
+          "user_id": "homepage-demo",
+          "created_at": "2026-09-26T22:58:38.999256+00:00",
+          "updated_at": "2026-09-26T22:58:38.999258+00:00",
+          "valid_from": "2026-09-26T22:58:38.999235+00:00",
+          "valid_until": null,
+          "stability": "medium",
+          "context": {
+            "domain": "work_schedule",
+            "inherited_context": true
+          },
+          "supersedes": "2f136c97-13a9-4316-808e-eb3491204551",
+          "contradicted_by": [],
+          "status": "active",
+          "memory_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1"
+        }
+      ],
+      "memory_conflicts": {},
+      "memory_audit": [
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "2f136c97-13a9-4316-808e-eb3491204551",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.998771+00:00",
+          "audit_id": "95d2565c-e03c-4bbe-a2e0-30e5fb932810"
+        },
+        {
+          "event_type": "memory_write",
+          "user_id": "homepage-demo",
+          "subject_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "status": "active",
+            "source": "explicit"
+          },
+          "timestamp": "2026-09-26T22:58:38.999278+00:00",
+          "audit_id": "ce004b64-d6b8-47fb-b2b0-2598d0a2c53e"
+        },
+        {
+          "event_type": "memory_supersede",
+          "user_id": "homepage-demo",
+          "subject_id": "ea1669b3-3dd6-4597-bf95-bdc902d935a1",
+          "key": "preference.work_time",
+          "reason": "",
+          "metadata": {
+            "supersedes": "2f136c97-13a9-4316-808e-eb3491204551"
+          },
+          "timestamp": "2026-09-26T22:58:38.999284+00:00",
+          "audit_id": "590873e0-b735-4238-a12d-7a2dfdde2192"
+        }
+      ],
+      "goals": [
+        {
+          "description": "finish the conference deck by Friday",
+          "user_id": "homepage-demo",
+          "priority": 0.7,
+          "deadline": "Friday",
+          "status": "active",
+          "confidence": 1.0,
+          "parent_goal_id": null,
+          "subtasks": [],
+          "progress": 0.0,
+          "blockers": [],
+          "dependencies": [],
+          "goal_id": "95077985-12e0-435c-a063-c4933bb8b4ef",
+          "created_at": "2026-09-26T22:58:38.999185+00:00"
+        }
+      ],
+      "behavior": {
+        "verbosity": 0.5,
+        "directness": 0.5,
+        "warmth": 0.5,
+        "initiative": 0.5
+      },
+      "autonomy_preference": 0.5,
+      "config": {
+        "memory_enabled": true,
+        "memory_update_policy": "latest",
+        "contradiction_resolution": true,
+        "confidence_tracking": true,
+        "goal_model": true,
+        "calibrated_proactivity": true,
+        "outcome_verification": true,
+        "privacy_guard": true
+      }
+    }
+  }
+]

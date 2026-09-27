@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>Trajectory grading calibration</title>
+<style>body{font:16px/1.5 system-ui;max-width:1000px;margin:40px auto;padding:0 20px}pre{white-space:pre-wrap;background:#f5f5f5;padding:16px}.card{border:1px solid #ddd;padding:20px;margin:18px 0}button{margin-right:8px;padding:8px 12px}</style>
+<h1>Trajectory grading calibration</h1><p>Judge whether the trajectory satisfies the task and policy. Use <b>Unknown</b> if the trace lacks enough evidence.</p><div id="app"></div>
+<script>
+fetch('tasks.json').then(r=>r.json()).then(tasks=>{let i=0, answers=[]; const app=document.querySelector('#app');
+function render(){let t=tasks[i]; if(!t){app.innerHTML='<h2>Complete</h2><pre>'+JSON.stringify(answers,null,2)+'</pre>';return;} app.innerHTML=`<div class=card><b>${t.review_id}</b><h3>Task</h3><pre>${escapeHtml(JSON.stringify(t.task,null,2))}</pre><h3>Trajectory</h3><pre>${escapeHtml(JSON.stringify(t.trajectory,null,2))}</pre><button onclick="ans('pass')">Pass</button><button onclick="ans('fail')">Fail</button><button onclick="ans('unknown')">Unknown</button></div>`}
+window.ans=v=>{answers.push({review_id:tasks[i].review_id,verdict:v});i++;render()}; window.escapeHtml=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); render();});
+</script>
