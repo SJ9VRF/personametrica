@@ -1,0 +1,7 @@
+{
+  "logged_experiments": 13,
+  "failed_or_revised_hypotheses": 7,
+  "major_design_changes": 6,
+  "persistent_failure_modes": 5,
+  "note": "Counts refer to explicitly documented, checked-in evidence in PersonaMetrica v4.2.0; they are not reconstructed historical claims."
+}

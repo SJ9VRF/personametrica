@@ -1,0 +1,2 @@
+{"alternative": "premium", "base": "save", "expected": "save", "explicit": "premium", "nuisance": "premium", "slot": "budget_style", "weak": "premium"}
+{"alternative": "spontaneous", "base": "structured", "expected": "structured", "explicit": "spontaneous", "nuisance": "spontaneous", "slot": "travel_pace", "weak": "spontaneous"}

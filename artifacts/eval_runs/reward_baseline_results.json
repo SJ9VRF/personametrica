@@ -1,0 +1,166 @@
+{
+  "model": "PairwiseLinearRanker",
+  "scope": "local lexical pairwise learned baseline; not an LLM reward model",
+  "split": {
+    "train": 582,
+    "validation": 71,
+    "test": 71,
+    "strategy": "group-aware holdout"
+  },
+  "metrics": {
+    "train": {
+      "accuracy": 1.0,
+      "mean_margin": 1.056339837873006,
+      "n": 582
+    },
+    "validation": {
+      "accuracy": 1.0,
+      "mean_margin": 1.0554994188727014,
+      "n": 71
+    },
+    "test": {
+      "accuracy": 1.0,
+      "mean_margin": 1.0627183585978865,
+      "n": 71
+    }
+  },
+  "negative_control_test": {
+    "accuracy": 0.49295774647887325,
+    "mean_margin": -0.05264536479998115,
+    "n": 71
+  },
+  "lexically_matched_contrast": {
+    "accuracy": 0.5,
+    "mean_margin": -0.047754974850305665,
+    "n": 80
+  },
+  "test_by_family": {
+    "high_stakes_autonomy": {
+      "accuracy": 1.0,
+      "mean_margin": 0.3546090361086156,
+      "n": 5
+    },
+    "low_value_proactivity": {
+      "accuracy": 1.0,
+      "mean_margin": 0.23786992164125165,
+      "n": 2
+    },
+    "reversible_assistance": {
+      "accuracy": 1.0,
+      "mean_margin": 1.041107811700873,
+      "n": 29
+    },
+    "temporal_memory": {
+      "accuracy": 1.0,
+      "mean_margin": 0.04521216627510327,
+      "n": 1
+    },
+    "uncertainty_calibration": {
+      "accuracy": 1.0,
+      "mean_margin": 1.2637317567948219,
+      "n": 34
+    }
+  },
+  "top_features": [
+    {
+      "feature": "the__user",
+      "weight": -0.534462
+    },
+    {
+      "feature": "user",
+      "weight": -0.534371
+    },
+    {
+      "feature": "the",
+      "weight": -0.386284
+    },
+    {
+      "feature": "immediately",
+      "weight": -0.34814
+    },
+    {
+      "feature": "ask",
+      "weight": 0.344873
+    },
+    {
+      "feature": "before",
+      "weight": 0.344873
+    },
+    {
+      "feature": "take",
+      "weight": -0.324114
+    },
+    {
+      "feature": "low",
+      "weight": -0.308182
+    },
+    {
+      "feature": "a__clarifying",
+      "weight": 0.29013
+    },
+    {
+      "feature": "an__action",
+      "weight": 0.29013
+    },
+    {
+      "feature": "ask__a",
+      "weight": 0.29013
+    },
+    {
+      "feature": "before__committing",
+      "weight": 0.29013
+    },
+    {
+      "feature": "clarifying",
+      "weight": 0.29013
+    },
+    {
+      "feature": "clarifying__question",
+      "weight": 0.29013
+    },
+    {
+      "feature": "committing",
+      "weight": 0.29013
+    },
+    {
+      "feature": "committing__to",
+      "weight": 0.29013
+    },
+    {
+      "feature": "question",
+      "weight": 0.29013
+    },
+    {
+      "feature": "question__before",
+      "weight": 0.29013
+    },
+    {
+      "feature": "to__an",
+      "weight": 0.29013
+    },
+    {
+      "feature": "an",
+      "weight": 0.289492
+    },
+    {
+      "feature": "or",
+      "weight": 0.288218
+    },
+    {
+      "feature": "to",
+      "weight": 0.287384
+    },
+    {
+      "feature": "act",
+      "weight": -0.286338
+    },
+    {
+      "feature": "act__immediately",
+      "weight": -0.286338
+    },
+    {
+      "feature": "confidence__in",
+      "weight": -0.286338
+    }
+  ]
+}

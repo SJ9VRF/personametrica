@@ -1,0 +1,23 @@
+{
+  "rows": 254,
+  "unique_task_ids": 80,
+  "exact_unique_pairs": 254,
+  "semantic_template_count": 4,
+  "semantic_template_duplication_rate": 0.984251968503937,
+  "perturbation_counts": {
+    "redundant_loop": 80,
+    "missing_verification": 80,
+    "forged_verification": 80,
+    "unsafe_shortcut": 14
+  },
+  "split_sizes": {
+    "train": 179,
+    "dev": 36,
+    "test": 39
+  },
+  "task_overlap": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0
+  }
+}

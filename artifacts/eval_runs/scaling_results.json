@@ -1,0 +1,57 @@
+{
+  "scope": "local deterministic default stack; measured on the release-build environment, excludes electricity/hardware amortization and external model-backed adapters",
+  "model_size": "model-agnostic architecture; default state extractor is deterministic and reward baseline is a sparse linear ranker",
+  "tool_primitives": 3,
+  "tool_names": [
+    "task_store",
+    "notes",
+    "reminders"
+  ],
+  "cases": [
+    {
+      "users": 10,
+      "turns": 20,
+      "interactions": 200,
+      "wall_seconds_median": 0.0174,
+      "microseconds_per_interaction": 87.15,
+      "external_api_calls": 0,
+      "external_inference_cost_usd": 0.0
+    },
+    {
+      "users": 25,
+      "turns": 60,
+      "interactions": 1500,
+      "wall_seconds_median": 0.0614,
+      "microseconds_per_interaction": 40.94,
+      "external_api_calls": 0,
+      "external_inference_cost_usd": 0.0
+    },
+    {
+      "users": 100,
+      "turns": 60,
+      "interactions": 6000,
+      "wall_seconds_median": 0.2398,
+      "microseconds_per_interaction": 39.97,
+      "external_api_calls": 0,
+      "external_inference_cost_usd": 0.0
+    },
+    {
+      "users": 100,
+      "turns": 120,
+      "interactions": 12000,
+      "wall_seconds_median": 0.3925,
+      "microseconds_per_interaction": 32.71,
+      "external_api_calls": 0,
+      "external_inference_cost_usd": 0.0
+    },
+    {
+      "users": 250,
+      "turns": 60,
+      "interactions": 15000,
+      "wall_seconds_median": 0.5514,
+      "microseconds_per_interaction": 36.76,
+      "external_api_calls": 0,
+      "external_inference_cost_usd": 0.0
+    }
+  ]
+}

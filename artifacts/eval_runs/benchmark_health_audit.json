@@ -1,0 +1,73 @@
+{
+  "version": "4.1.0",
+  "checks": {
+    "dev_test_identity_overlap_zero": true,
+    "dev_test_full_stream_overlap_zero": true,
+    "standard_full_stream_duplicates_zero": true,
+    "all_domains_queried": true,
+    "temporary_queries_present": true,
+    "query_slot_imbalance_below_15pct": true,
+    "answer_skew_below_70pct": true,
+    "benchmark_not_saturated": true
+  },
+  "all_pass": true,
+  "counts": {
+    "dev_identities": 180,
+    "test_identities": 400,
+    "identity_overlap": 0,
+    "dev_streams": 180,
+    "test_streams": 400,
+    "full_stream_overlap": 0,
+    "standard_users": 500,
+    "standard_duplicate_full_streams": 0,
+    "standard_queries": 13500,
+    "temporary_queries": 144
+  },
+  "query_slot_counts": {
+    "response_detail": 1337,
+    "meeting_style": 1363,
+    "exercise_time": 1327,
+    "planning_style": 1359,
+    "work_time": 1376,
+    "restaurant_noise": 1355,
+    "travel_pace": 1368,
+    "budget_style": 1340,
+    "reading_depth": 1372,
+    "notification_style": 1303
+  },
+  "query_slot_relative_range": 0.05407407407407407,
+  "max_answer_skew": 0.5447761194029851,
+  "answer_skew_by_slot": {
+    "work_time": 0.5007267441860465,
+    "response_detail": 0.5190725504861631,
+    "travel_pace": 0.5350877192982456,
+    "restaurant_noise": 0.5084870848708487,
+    "notification_style": 0.513430544896393,
+    "budget_style": 0.5447761194029851,
+    "exercise_time": 0.5312735493594575,
+    "meeting_style": 0.5135730007336757,
+    "reading_depth": 0.5080174927113703,
+    "planning_style": 0.506990434142752
+  },
+  "observation_source_counts": {
+    "explicit": 8123,
+    "hypothetical": 5933,
+    "other_person": 5792,
+    "implicit_behavior": 6660,
+    "implicit_choice": 625
+  },
+  "observation_domain_counts": {
+    "work_time": 2688,
+    "response_detail": 2739,
+    "notification_style": 2731,
+    "travel_pace": 2724,
+    "restaurant_noise": 2775,
+    "budget_style": 2725,
+    "exercise_time": 2644,
+    "meeting_style": 2701,
+    "reading_depth": 2706,
+    "planning_style": 2700
+  },
+  "best_standard_state_accuracy": 0.9316296296296296,
+  "note": "Structured sub-records can repeat because the simulator uses a finite schema. This audit hashes complete evolving user histories with identifiers removed; full-history duplication is the leakage-relevant diagnostic."
+}

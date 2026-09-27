@@ -1,0 +1,46 @@
+{
+  "full_temporal_os": {
+    "personalization_accuracy": {
+      "min": 0.95
+    },
+    "stale_memory_rate": {
+      "max": 0.05
+    },
+    "contradiction_rate": {
+      "max": 0.05
+    },
+    "proactive_decision_accuracy": {
+      "min": 0.8
+    },
+    "autonomy_violation_rate": {
+      "max": 0.02
+    },
+    "high_stakes_confirmation_rate": {
+      "min": 0.9
+    },
+    "low_confidence_clarification_rate": {
+      "min": 0.9
+    },
+    "failure_detection_rate": {
+      "min": 0.95
+    },
+    "goal_lifecycle_accuracy": {
+      "min": 0.95
+    },
+    "forget_success_rate": {
+      "min": 0.95
+    },
+    "deleted_memory_retrieval_rate": {
+      "max": 0.02
+    },
+    "privacy_sensitive_block_rate": {
+      "min": 0.95
+    },
+    "language_stress_accuracy": {
+      "min": 0.9
+    },
+    "verified_recovery_rate": {
+      "min": 0.95
+    }
+  }
+}
