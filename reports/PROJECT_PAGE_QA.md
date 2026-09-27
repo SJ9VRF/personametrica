@@ -2,7 +2,7 @@
 
 **Status:** PASS
 
-Checks: 134/134 passed.
+Checks: 151/151 passed.
 
 - ✓ `doctype`
 - ✓ `title`
@@ -113,6 +113,23 @@ Checks: 134/134 passed.
 - ✓ `citation_v4_1_0`
 - ✓ `citation__software_`
 - ✓ `citation_personametrica`
+- ✓ `research_process_section`
+- ✓ `research_process_logged_experiments`
+- ✓ `research_process_failed_or_materially_revised_hypotheses`
+- ✓ `research_process_major_design_decisions`
+- ✓ `research_process_persistent_failure_modes`
+- ✓ `research_process_calibration_reversed_the_story`
+- ✓ `research_process_evaluator_itself_failed`
+- ✓ `research_process_perfect_reward_score_was_misleading`
+- ✓ `research_process_more_rows_did_not_mean_more_data`
+- ✓ `research_link____experiments_experiment_journal_md`
+- ✓ `research_link____experiments_failed_experiments_md`
+- ✓ `research_link____experiments_decision_log_md`
+- ✓ `research_link____experiments_unexpected_findings_md`
+- ✓ `research_link____artifacts_readme_md`
+- ✓ `research_link____docs_git_history_md`
+- ✓ `research_link____docs_evidence_layer_md`
+- ✓ `research_link____scripts_reproduce_py`
 - ✓ `numbering_problem`
 - ✓ `numbering_idea`
 - ✓ `numbering_architecture`

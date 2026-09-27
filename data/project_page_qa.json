@@ -438,6 +438,74 @@
       "passed": true,
       "detail": "citation missing PersonaMetrica"
     },
+    "research_process_section": {
+      "passed": true,
+      "detail": "Inside the research process section missing"
+    },
+    "research_process_logged_experiments": {
+      "passed": true,
+      "detail": "research-process layer missing logged experiments"
+    },
+    "research_process_failed_or_materially_revised_hypotheses": {
+      "passed": true,
+      "detail": "research-process layer missing failed or materially revised hypotheses"
+    },
+    "research_process_major_design_decisions": {
+      "passed": true,
+      "detail": "research-process layer missing major design decisions"
+    },
+    "research_process_persistent_failure_modes": {
+      "passed": true,
+      "detail": "research-process layer missing persistent failure modes"
+    },
+    "research_process_calibration_reversed_the_story": {
+      "passed": true,
+      "detail": "research-process layer missing calibration reversed the story"
+    },
+    "research_process_evaluator_itself_failed": {
+      "passed": true,
+      "detail": "research-process layer missing evaluator itself failed"
+    },
+    "research_process_perfect_reward_score_was_misleading": {
+      "passed": true,
+      "detail": "research-process layer missing perfect reward score was misleading"
+    },
+    "research_process_more_rows_did_not_mean_more_data": {
+      "passed": true,
+      "detail": "research-process layer missing more rows did not mean more data"
+    },
+    "research_link____experiments_experiment_journal_md": {
+      "passed": true,
+      "detail": "research-process link missing ../experiments/EXPERIMENT_JOURNAL.md"
+    },
+    "research_link____experiments_failed_experiments_md": {
+      "passed": true,
+      "detail": "research-process link missing ../experiments/FAILED_EXPERIMENTS.md"
+    },
+    "research_link____experiments_decision_log_md": {
+      "passed": true,
+      "detail": "research-process link missing ../experiments/DECISION_LOG.md"
+    },
+    "research_link____experiments_unexpected_findings_md": {
+      "passed": true,
+      "detail": "research-process link missing ../experiments/UNEXPECTED_FINDINGS.md"
+    },
+    "research_link____artifacts_readme_md": {
+      "passed": true,
+      "detail": "research-process link missing ../artifacts/README.md"
+    },
+    "research_link____docs_git_history_md": {
+      "passed": true,
+      "detail": "research-process link missing ../docs/GIT_HISTORY.md"
+    },
+    "research_link____docs_evidence_layer_md": {
+      "passed": true,
+      "detail": "research-process link missing ../docs/EVIDENCE_LAYER.md"
+    },
+    "research_link____scripts_reproduce_py": {
+      "passed": true,
+      "detail": "research-process link missing ../scripts/reproduce.py"
+    },
     "numbering_problem": {
       "passed": true,
       "detail": "problem kicker must be '02 \u00b7 Why this problem matters', got '02 \u00b7 Why this problem matters'"

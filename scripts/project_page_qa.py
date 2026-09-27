@@ -77,6 +77,14 @@ cit=txt('#citation')
 for phrase in ['Aura Yavary','2026',f'v{version}','@software{','PersonaMetrica']:
     check('citation_'+re.sub('[^a-z0-9]','_',phrase.lower()),phrase in cit,f'citation missing {phrase}')
 
+# Evidence Layer: unnumbered second layer below the polished project narrative.
+process=txt('#research-process').lower()
+check('research_process_section',bool(soup.find(id='research-process')),'Inside the research process section missing')
+for phrase in ['logged experiments','failed or materially revised hypotheses','major design decisions','persistent failure modes','calibration reversed the story','evaluator itself failed','perfect reward score was misleading','more rows did not mean more data']:
+    check('research_process_'+re.sub('[^a-z]','_',phrase),phrase in process,f'research-process layer missing {phrase}')
+for href in ['../experiments/EXPERIMENT_JOURNAL.md','../experiments/FAILED_EXPERIMENTS.md','../experiments/DECISION_LOG.md','../experiments/UNEXPECTED_FINDINGS.md','../artifacts/README.md','../docs/GIT_HISTORY.md','../docs/EVIDENCE_LAYER.md','../scripts/reproduce.py']:
+    check('research_link_'+re.sub('[^a-z0-9]','_',href.lower()),bool(soup.select_one(f'#research-process a[href="{href}"]')),f'research-process link missing {href}')
+
 # Exact visible numbering must match the public 14-part contract.
 expected_kickers={
 'problem':'02 · Why this problem matters','idea':'03 · Core idea','architecture':'04 · Architecture','contribution':'05 · My contribution',

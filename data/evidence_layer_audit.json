@@ -1,0 +1,112 @@
+{
+  "status": "FAIL",
+  "summary": {
+    "logged_experiments": 13,
+    "failed_or_revised_hypotheses": 7,
+    "major_design_changes": 6,
+    "persistent_failure_modes": 5,
+    "note": "Counts refer to explicitly documented, checked-in evidence in PersonaMetrica v4.2.0; they are not reconstructed historical claims."
+  },
+  "checks": {
+    "experiment_count": {
+      "passed": true,
+      "detail": ""
+    },
+    "failed_count": {
+      "passed": true,
+      "detail": ""
+    },
+    "decision_count": {
+      "passed": false,
+      "detail": ""
+    },
+    "unexpected_present": {
+      "passed": true,
+      "detail": ""
+    },
+    "per_experiment_logs": {
+      "passed": true,
+      "detail": "13 logs"
+    },
+    "raw_eval_runs": {
+      "passed": true,
+      "detail": "11 files"
+    },
+    "raw_failure_examples": {
+      "passed": true,
+      "detail": "3 files"
+    },
+    "raw_plots": {
+      "passed": true,
+      "detail": "5 files"
+    },
+    "raw_configs": {
+      "passed": true,
+      "detail": "3 files"
+    },
+    "raw_qualitative_cases": {
+      "passed": true,
+      "detail": "3 files"
+    },
+    "raw_ablations": {
+      "passed": true,
+      "detail": "1 files"
+    },
+    "copy_heldout_grader_attacks": {
+      "passed": true,
+      "detail": "heldout_grader_attacks.json"
+    },
+    "copy_scaling_results": {
+      "passed": true,
+      "detail": "scaling_results.json"
+    },
+    "copy_benchmark_health_audit": {
+      "passed": true,
+      "detail": "benchmark_health_audit.json"
+    },
+    "copy_leaderboard_seed_uncertainty": {
+      "passed": true,
+      "detail": "leaderboard_seed_uncertainty.json"
+    },
+    "copy_counterfactual_belief_eval": {
+      "passed": true,
+      "detail": "counterfactual_belief_eval.json"
+    },
+    "copy_ablation_results": {
+      "passed": true,
+      "detail": "ablation_results.json"
+    },
+    "copy_calibration_protocol_analysis": {
+      "passed": true,
+      "detail": "calibration_protocol_analysis.json"
+    },
+    "copy_leaderboard_stability_audit": {
+      "passed": true,
+      "detail": "leaderboard_stability_audit.json"
+    },
+    "copy_protocol_grid_robustness": {
+      "passed": true,
+      "detail": "protocol_grid_robustness.json"
+    },
+    "copy_trajectory_failure_data_audit": {
+      "passed": true,
+      "detail": "trajectory_failure_data_audit.json"
+    },
+    "copy_reward_baseline_results": {
+      "passed": true,
+      "detail": "reward_baseline_results.json"
+    },
+    "journal_evidence_paths": {
+      "passed": true,
+      "detail": "missing=[]"
+    },
+    "git_history_present": {
+      "passed": true,
+      "detail": ".git absent"
+    },
+    "git_policy_explicit": {
+      "passed": true,
+      "detail": ""
+    }
+  }
+}
