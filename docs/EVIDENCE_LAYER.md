@@ -18,6 +18,8 @@ PersonaMetrica keeps the polished paper/homepage separate from a lower-level res
 - [Unexpected findings](../experiments/UNEXPECTED_FINDINGS.md)
 - [Git history policy](GIT_HISTORY.md)
 - [Raw artifact index](../artifacts/README.md)
+- [Real evaluation tables](../reports/EVIDENCE_LAYER_EVAL_TABLES.md)
+- [Research process traces](../reports/RESEARCH_PROCESS_TRACES.md)
 - [Evidence ledger](EVIDENCE_LEDGER.md)
 
 ## Persistent failure modes

@@ -1,12 +1,12 @@
 # Evidence Layer Audit
 
-**Status:** FAIL
+**Status:** PASS
 
-Checks: 24/25 passed.
+Checks: 25/25 passed.
 
 - ✓ `experiment_count`
 - ✓ `failed_count`
-- ✗ `decision_count`
+- ✓ `decision_count`
 - ✓ `unexpected_present`
 - ✓ `per_experiment_logs`
 - ✓ `raw_eval_runs`
