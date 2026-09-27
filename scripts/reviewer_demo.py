@@ -54,7 +54,6 @@ def main():
     out={
         'status':'PASS',
         'version':'4.2.0',
-        'elapsed_seconds':round(time.perf_counter()-t0,3),
         'checks':checks,
         'headline_evidence':{
             'protocol_cells':leader['protocol_cells'],
@@ -92,6 +91,8 @@ def main():
         '## Boundaries', '',
     ] + [f'- {x}' for x in out['boundaries']] + ['', 'Run with:', '', '```bash', 'python scripts/reviewer_demo.py', '```', '']
     (ROOT/'reports/REVIEWER_DEMO.md').write_text('\n'.join(lines),encoding='utf-8')
+    elapsed=round(time.perf_counter()-t0,3)
     print(json.dumps(out,indent=2))
+    print(f'Reviewer demo runtime: {elapsed:.3f}s')
 
 if __name__=='__main__': main()

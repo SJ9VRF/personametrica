@@ -1,7 +1,6 @@
 {
   "status": "PASS",
   "version": "4.2.0",
-  "elapsed_seconds": 0.01,
   "checks": {
     "protocol_registry_fingerprint_valid": true,
     "benchmark_health_all_pass": true,
