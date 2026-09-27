@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "version": "4.1.0",
-  "elapsed_seconds": 2.543,
-  "python": "/tmp/personametrica-clean-jctbgcvp/venv/bin/python",
+  "version": "4.2.0",
+  "elapsed_seconds": 3.975,
+  "python": "/tmp/personametrica-clean-x62tq2x9/venv/bin/python",
   "isolation_mode": "stdlib-path-isolation",
   "editable_install_completed": false,
   "pip_available_in_fresh_venv": true,

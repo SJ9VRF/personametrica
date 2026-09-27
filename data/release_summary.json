@@ -1,8 +1,8 @@
 {
-  "version": "4.1.0",
+  "version": "4.2.0",
   "release_scope": "local reproducible synthetic research prototype; no human/frontier-model performance claim",
   "qa": {
-    "tests": 74,
+    "tests": 77,
     "reproduction_steps": 67
   },
   "core_metrics": {

@@ -21,7 +21,7 @@
   "@type": "sc:Dataset",
   "name": "PersonaMetrica-Bench",
   "description": "Controlled synthetic benchmark for belief updating and decision risk under evolving personal preferences.",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "datePublished": "2026-09-24",
   "url": "REPLACE_WITH_ANONYMOUS_REVIEW_URL_BEFORE_SUBMISSION",
   "license": "https://opensource.org/license/mit",

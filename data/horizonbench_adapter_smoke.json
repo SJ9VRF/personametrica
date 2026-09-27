@@ -1,5 +1,5 @@
 {
-  "version": "4.1.0",
+  "version": "4.2.0",
   "status": "schema-smoke-test-only",
   "source_schema": "HorizonBench official evaluate.py JSONL result schema",
   "fixture_is_synthetic": true,

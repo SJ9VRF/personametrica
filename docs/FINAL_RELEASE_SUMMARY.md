@@ -1,4 +1,4 @@
-# PersonaMetrica v4.1.0 — Final Release Summary
+# PersonaMetrica v4.2.0 — Final Release Summary
 
 ## What this release proves
 
@@ -6,7 +6,7 @@ The paper-first contribution, PersonaMetrica-Bench, evaluates long-horizon perso
 
 ## QA
 
-- **74 tests passed**
+- **77 tests passed**
 - **67-stage reproduction pipeline**
 - behavioral regression gates pass
 - release metadata/version consistency is enforced

@@ -1,6 +1,6 @@
 {
   "page": "project/index.html",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "checks": {
     "doctype": {
       "passed": true,
@@ -426,9 +426,9 @@
       "passed": true,
       "detail": "citation missing 2026"
     },
-    "citation_v4_1_0": {
+    "citation_v4_2_0": {
       "passed": true,
-      "detail": "citation missing v4.1.0"
+      "detail": "citation missing v4.2.0"
     },
     "citation__software_": {
       "passed": true,

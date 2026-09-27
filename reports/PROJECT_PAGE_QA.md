@@ -110,7 +110,7 @@ Checks: 151/151 passed.
 - ✓ `artifact_blog_post`
 - ✓ `citation_aura_yavary`
 - ✓ `citation_2026`
-- ✓ `citation_v4_1_0`
+- ✓ `citation_v4_2_0`
 - ✓ `citation__software_`
 - ✓ `citation_personametrica`
 - ✓ `research_process_section`

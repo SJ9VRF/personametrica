@@ -1,6 +1,6 @@
 # PersonaMetrica — 5-minute review
 
-**Aura Yavary · sole researcher / engineer · 2026 · v4.1.0**
+**Aura Yavary · sole researcher / engineer · 2026 · v4.2.0**
 
 > **Fast verification:** `python scripts/reviewer_demo.py` (sub-second in the checked environment). It checks the frozen evidence chain and reruns the held-out causal-grader and temporal-update mechanisms live.
 

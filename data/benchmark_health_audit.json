@@ -1,5 +1,5 @@
 {
-  "version": "4.1.0",
+  "version": "4.2.0",
   "checks": {
     "dev_test_identity_overlap_zero": true,
     "dev_test_full_stream_overlap_zero": true,
