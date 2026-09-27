@@ -24,3 +24,17 @@ The project page is a first-class research artifact. It must let a hiring manage
 Before release, the Hero must answer four questions without scrolling deeply: **What problem? What did Aura contribute? What is the result? Does it actually work?**
 
 The automated `scripts/project_page_qa.py` turns this specification into a release gate so future edits cannot silently remove a required section or artifact.
+
+## Required Evidence Layer beneath the 14-part page
+
+After the polished 14-part narrative, every flagship project must expose an **Inside the research process** layer with:
+
+1. experiment journal with hypothesis / setup / result / interpretation / next decision;
+2. failed experiments / revised hypotheses;
+3. decision log in Decision → Alternatives → Evidence → Trade-off → Outcome format;
+4. real evaluation tables with seed/N/CI scope when actually available;
+5. unexpected findings that changed the project;
+6. honest Git history policy — never backdate or synthesize earlier commits;
+7. raw artifacts: eval runs, failure examples, plots, configs, qualitative cases, and ablations.
+
+The layer must link to executable evidence and reproduction, not just prose. `scripts/evidence_layer_audit.py` and `scripts/project_page_qa.py` release-gate this contract.

@@ -2,7 +2,7 @@ from __future__ import annotations
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='4.1.0'
+VERSION='4.2.0'
 public=['README.md','docs/HIRING_MANAGER_README.md','project/index.html','CITATION.cff','pyproject.toml']
 texts={p:(ROOT/p).read_text(encoding='utf-8') for p in public}
 checks={

@@ -156,7 +156,7 @@ def main():
         }
 
     result = {
-        'version': '4.1.0',
+        'version': '4.2.0',
         'development_seeds': DEV_SEEDS,
         'long_horizon_test_seeds': TEST_SEEDS,
         'protocol_grid': {

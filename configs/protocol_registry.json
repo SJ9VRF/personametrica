@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "4.1.0",
+  "release": "4.2.0",
   "purpose": "Freeze the primary PersonaMetrica evaluation choices before long-horizon test interpretation.",
   "development_seeds": [
     1,

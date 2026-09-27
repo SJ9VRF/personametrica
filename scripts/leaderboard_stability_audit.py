@@ -96,7 +96,7 @@ def main():
         rank_summary[m]={'mean_rank':mu,'rank_variance':var,'best_rank':min(rs),'worst_rank':max(rs),'winner_cells':winner_counts[m]}
 
     out={
-        'version':'4.1.0','protocol_cells':n,'development_seeds':list(DEV_SEEDS),'long_horizon_test_seeds':list(TEST_SEEDS),
+        'version':'4.2.0','protocol_cells':n,'development_seeds':list(DEV_SEEDS),'long_horizon_test_seeds':list(TEST_SEEDS),
         'summary':{
             'winner_counts':dict(winner_counts),
             'winner_change_probability':winner_changes/max(1,pairs),

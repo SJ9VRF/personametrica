@@ -20,6 +20,17 @@ paths=[
  'configs/protocol_registry.json','data/protocol_registry_fingerprint.json','data/protocol_stability_matrix.json','data/leaderboard_stability_audit.json','data/leaderboard_seed_uncertainty.json','data/protocol_grid_robustness.json','data/horizonbench_adapter_smoke.json','external_benchmarks/horizonbench_adapter.py','external_benchmarks/HORIZONBENCH_ADAPTER.md','external_benchmarks/fixtures/horizonbench_results_model_a.jsonl','external_benchmarks/fixtures/horizonbench_results_model_b.jsonl','data/benchmark_health_audit.json','data/agent_trajectory_eval.json','data/heldout_grader_attacks.json','data/counterfactual_belief_eval.json','data/agent_trajectories.jsonl','data/trajectory_failure_pairs.jsonl','data/trajectory_corrections.jsonl','data/trajectory_failure_splits.json','data/trajectory_failure_data_audit.json','data/reward_hacking_eval.json','data/grader_reliability.json','data/grader_disagreement_queue.jsonl','data/grader_fingerprint.json',
  'annotation/trajectory_grading/README.md','annotation/trajectory_grading/index.html','annotation/trajectory_grading/tasks.json'
 ]
+
+# Evidence-layer artifacts are anonymous and reviewer-useful; Git metadata/public portfolio pages stay excluded.
+evidence_paths=[
+ 'docs/EVIDENCE_LAYER.md','docs/FLAGSHIP_EVIDENCE_LAYER_CONTRACT.md',
+ 'experiments/EXPERIMENT_JOURNAL.md','experiments/FAILED_EXPERIMENTS.md','experiments/DECISION_LOG.md','experiments/UNEXPECTED_FINDINGS.md',
+ 'reports/EVIDENCE_LAYER_EVAL_TABLES.md','reports/RESEARCH_PROCESS_TRACES.md','reports/EVIDENCE_LAYER_AUDIT.md','data/evidence_layer_summary.json','data/evidence_layer_audit.json','scripts/evidence_layer_audit.py'
+]
+paths.extend(evidence_paths)
+for folder in ['artifacts/experiment_logs','artifacts/eval_runs','artifacts/failure_examples','artifacts/configs','artifacts/qualitative_cases','artifacts/ablations']:
+    paths.extend(str(x.relative_to(ROOT)) for x in sorted((ROOT/folder).glob('*')) if x.is_file())
+
 zip_path=out/'personalbench_x_anonymous_bundle.zip'
 with zipfile.ZipFile(zip_path,'w',zipfile.ZIP_DEFLATED) as z:
     z.write(out/'README.md','README.md')

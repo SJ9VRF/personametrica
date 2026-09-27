@@ -27,7 +27,7 @@ def main():
     for cost in sorted(set(c['defer_cost'] for c in cells)):
         variants.append({'name':f'leave-defer-cost-out:{cost}','dropped':{'defer_cost':cost},'summary':summarize([c for c in cells if c['defer_cost']!=cost])})
     pert=[v for v in variants if v['name']!='full-frozen-grid']
-    out={'version':'4.1.0','source_cells':len(cells),'variants':variants,'robustness_summary':{
+    out={'version':'4.2.0','source_cells':len(cells),'variants':variants,'robustness_summary':{
       'perturbations':len(pert),
       'min_winner_change_probability':min(v['summary']['winner_change_probability'] for v in pert),
       'max_winner_change_probability':max(v['summary']['winner_change_probability'] for v in pert),

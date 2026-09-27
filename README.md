@@ -2,7 +2,7 @@
 
 > **Stress-Testing Evaluation Protocols for Long-Horizon Personal Agents**
 
-**Aura Yavary · 2026 · v4.1.0**
+**Aura Yavary · 2026 · v4.2.0**
 
 PersonaMetrica is an evaluation-science project for a specific failure mode in personalized agents: **the apparent winner can change when confidence calibration, action thresholds, or the evaluator itself changes.** The project separates evolving user-state estimation from action gating, then treats the grader as another fallible component that must be calibrated, attacked, versioned, and audited.
 
@@ -22,19 +22,18 @@ The central result is about **evaluation protocol sensitivity**. On the controll
 
 The result is deliberately scoped. PersonaMetrica-Bench begins from structured evidence; it does **not** establish natural-language extraction quality, human-population validity, or frontier-model gains. Human annotation and external-model interfaces are included, but results remain unclaimed until those experiments are actually run.
 
-## What is new in v4.1.0
+## What is new in v4.2.0
 
-v4.1 is a **flagship project-page and hiring-surface release**, not a new scientific SOTA claim. The underlying paper findings are unchanged; the public artifact is reorganized so a reviewer can understand and verify the work without digging through the repository.
+v4.2 adds a **research Evidence Layer** beneath the polished paper and project page. The scientific headline is unchanged; the release makes the path from hypothesis to failure to design change inspectable.
 
-- **Exact 14-part homepage contract:** Hero → Why it matters → Core idea → Architecture → My contribution → Experiments → Results → Failure analysis → Interactive demo → Scaling → Safety/limitations → Technical deep dive → Artifacts → Citation.
-- **60-second Hero contract:** the first screen now states the problem, Aura Yavary's contribution, the main result, and the executable proof path. The first five CTAs are exactly **Paper / Code / Demo / Benchmark / Video**.
-- **Research-first experiments:** the page now foregrounds the checked paper setup: 500 synthetic long-horizon users, 27,133 observations, 13,500 queries, six systems, 75 frozen evaluation protocols, ten long-horizon test seeds, 2,000 paired seed bootstraps, 800 gold trajectories, held-out grader attacks, and 540 counterfactual belief interventions.
-- **Results at two levels:** the primary leaderboard-stability / seed-uncertainty / evaluator-OOD findings appear first; local mechanism sanity checks remain visible below. A separate baseline→method snapshot reports personalization/proactivity/recovery together with measured local latency and external API cost scope.
-- **Failure analysis that explains causes:** the page surfaces belief contamination, grader overfit, metric pathology, what cannot be auto-recovered, and one concrete verifier-guided retry trajectory that does recover.
-- **Architecture loops made explicit:** agent loop, recovery loop, and eval/post-training loop are named on-page, with a clear boundary that training-ready correction data are implemented but no completed frontier-model post-training result is claimed.
-- **Scaling contract:** model-size boundary, task horizon, tool count, interaction count, latency, cost, and robustness are all explicit rather than scattered across reports.
-- **GitHub without fabrication:** the Artifacts section includes a GitHub release handoff document, but no public repository URL is invented before a real repository exists.
-- **Hard release gate:** `scripts/project_page_qa.py` now enforces the 14-part numbering, Hero contract, five primary CTAs, architecture loops, ownership, results fields, recovery explanation, scaling fields, artifact inventory, citation, accessibility, and local-link integrity.
+- **Experiment journal:** 13 measured experiments with hypothesis, setup, result, interpretation, next decision, and direct evidence path.
+- **What did not work:** seven failed or materially revised hypotheses, including the calibration ranking reversal, held-out grader collapse, reward-model contrast failure, and semantic-template collapse in failure-derived training data.
+- **Decision log:** eight consequential design decisions recorded as Decision → Alternatives → Evidence → Trade-off → Outcome.
+- **Unexpected findings:** results that changed the paper or system direction are retained instead of rewritten into a clean success narrative.
+- **Raw artifact tree:** self-contained eval runs, failure examples, plots, frozen configs, qualitative trajectories, and ablation outputs under `artifacts/`.
+- **Honest Git history:** the distributed v4.1 ZIP had no `.git`; v4.2 therefore starts with an explicit v4.1 import commit and records all Evidence Layer work incrementally from that point. No history is backdated or fabricated.
+- **Homepage second layer:** `Inside the research process` shows experiment/failure/decision counts, four real turning points, and links to the journal, failed experiments, decisions, raw evidence, Git policy, and reproduction path.
+- **Release-gated evidence audit:** raw copied eval artifacts are hash-checked against canonical outputs and the journal/evidence structure must remain internally consistent.
 
 ## 60-second executable reviewer path
 
@@ -59,7 +58,7 @@ The remainder of this repository is the **PersonaMetrica systems substrate** use
 
 ## Flagship project page
 
-The reviewer-facing project homepage is `project/index.html`. It follows a 14-part research-project flow: hero, problem, core idea/novelty, architecture, contribution, experiments, results, failure analysis, interactive trajectory demo, scaling, safety/limitations, technical deep dive, artifacts, and citation. It is static, mobile-responsive, keyboard-accessible, has no third-party runtime dependencies, and is release-gated by `python scripts/project_page_qa.py`. The exact contract is documented in `docs/PROJECT_PAGE_SPEC.md`; `make page-qa` currently enforces 134 structural, evidence, accessibility, and artifact-integrity checks.
+The reviewer-facing project homepage is `project/index.html`. It follows a 14-part research-project flow: hero, problem, core idea/novelty, architecture, contribution, experiments, results, failure analysis, interactive trajectory demo, scaling, safety/limitations, technical deep dive, artifacts, and citation. It is static, mobile-responsive, keyboard-accessible, has no third-party runtime dependencies, and is release-gated by `python scripts/project_page_qa.py`. The exact contract is documented in `docs/PROJECT_PAGE_SPEC.md`; `make page-qa` currently enforces 151 structural, evidence, accessibility, and artifact-integrity checks.
 
 ## Project homepage
 

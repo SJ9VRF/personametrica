@@ -1,5 +1,16 @@
 # Changelog
 
+## v4.2.0 — Evidence Layer and honest research history
+
+- Added a 13-entry experiment journal with hypothesis, setup, result, interpretation, next decision, and canonical evidence path.
+- Added seven failed/revised hypotheses, eight decision records, seven unexpected findings, and three end-to-end research-process traces.
+- Added a self-contained `artifacts/` tree with raw eval outputs, failure examples, plots, frozen configs, trajectories, and ablations.
+- Added real evaluation tables that retain N/seeds/CI and scope boundaries instead of reducing the project to one hero metric.
+- Added an unnumbered `Inside the research process` homepage layer beneath the polished 14-part project narrative.
+- Added `scripts/evidence_layer_audit.py` plus homepage/release gates so the layer cannot silently disappear or drift from canonical outputs.
+- Started a real Git history from the imported v4.1 release snapshot and committed v4.2 work incrementally; no earlier history is fabricated or backdated.
+- Added a reusable Evidence Layer contract for the other flagship projects.
+
 ## v4.1.0 — Flagship Project Page Contract
 
 - Enforces the full 14-part project-page structure from Hero through Citation.

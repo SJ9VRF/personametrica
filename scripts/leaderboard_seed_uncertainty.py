@@ -105,7 +105,7 @@ def main():
     ci=lambda xs:[quantile(xs,.025),quantile(xs,.975)]
     cell_support=[x/BOOTSTRAPS for x in same_winner_support]
     out={
-      'version':'4.1.0','bootstrap_unit':'long-horizon test seed','bootstrap_replicates':BOOTSTRAPS,'bootstrap_rng_seed':BOOTSTRAP_SEED,
+      'version':'4.2.0','bootstrap_unit':'long-horizon test seed','bootstrap_replicates':BOOTSTRAPS,'bootstrap_rng_seed':BOOTSTRAP_SEED,
       'development_seeds':list(DEV_SEEDS),'test_seeds':list(TEST_SEEDS),'diagnostic_users_per_seed':10,'protocol_cells':len(cells),
       'point_estimate':point,
       'bootstrap_95_ci':{'winner_change_probability':ci(wcp),'mean_pairwise_kendall_tau':ci(mtau),'minimum_pairwise_kendall_tau':ci(mintau)},

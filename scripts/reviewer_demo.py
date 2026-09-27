@@ -53,7 +53,7 @@ def main():
     s=leader['summary']; bs=seed['bootstrap_95_ci']; pbs=cf['results']['personal-belief-state']
     out={
         'status':'PASS',
-        'version':'4.1.0',
+        'version':'4.2.0',
         'elapsed_seconds':round(time.perf_counter()-t0,3),
         'checks':checks,
         'headline_evidence':{

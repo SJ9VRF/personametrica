@@ -34,7 +34,7 @@ def main():
         imp=subprocess.run([str(py),'-c','import personalagi, personalbench; print("imports-ok")'],check=True,text=True,capture_output=True,env=env)
         cli=subprocess.run([str(py),'-m','personalagi','demo'],check=True,text=True,capture_output=True,env=env)
         result={
-            'status':'PASS','version':'4.1.0','elapsed_seconds':round(time.perf_counter()-t0,3),
+            'status':'PASS','version':'4.2.0','elapsed_seconds':round(time.perf_counter()-t0,3),
             'python':str(py),'isolation_mode':mode,'editable_install_completed':editable,
             'pip_available_in_fresh_venv':pip_probe.returncode==0,'core_dependencies_declared':0,
             'checks':{'fresh_venv_created':True,'package_imports':imp.stdout.strip()=='imports-ok','module_cli_demo_exit_zero':True},

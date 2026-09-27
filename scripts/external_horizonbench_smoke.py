@@ -13,7 +13,7 @@ def main():
     summaries=compare_models(models)
     for name,rows in models.items():
         summaries[name]['utility_t070_c010']=utility(rows,.70,.10)
-    out={'version':'4.1.0','status':'schema-smoke-test-only','source_schema':'HorizonBench official evaluate.py JSONL result schema','fixture_is_synthetic':True,'models':summaries,
+    out={'version':'4.2.0','status':'schema-smoke-test-only','source_schema':'HorizonBench official evaluate.py JSONL result schema','fixture_is_synthetic':True,'models':summaries,
          'claim_boundary':'These fixture scores are not HorizonBench model results. The adapter is executable infrastructure awaiting real official result JSONL files.'}
     (ROOT/'data'/'horizonbench_adapter_smoke.json').write_text(json.dumps(out,indent=2)+'\n')
     report=['# HorizonBench External-Result Adapter Smoke Test','',

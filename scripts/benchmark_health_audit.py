@@ -52,7 +52,7 @@ def main():
       'benchmark_not_saturated':best<0.99,
     }
     out={
-      'version':'4.1.0','checks':checks,'all_pass':all(checks.values()),
+      'version':'4.2.0','checks':checks,'all_pass':all(checks.values()),
       'counts':{'dev_identities':len(dev_ids),'test_identities':len(test_ids),'identity_overlap':len(dev_ids&test_ids),'dev_streams':len(dev_fp),'test_streams':len(test_fp),'full_stream_overlap':len(dev_fp&test_fp),'standard_users':len(std),'standard_duplicate_full_streams':len(std_fps)-len(set(std_fps)),'standard_queries':qtotal,'temporary_queries':temp},
       'query_slot_counts':dict(qslots),'query_slot_relative_range':imbalance,'max_answer_skew':max(answer_skews.values()),'answer_skew_by_slot':answer_skews,'observation_source_counts':dict(sources),'observation_domain_counts':dict(domains),'best_standard_state_accuracy':best,
       'note':'Structured sub-records can repeat because the simulator uses a finite schema. This audit hashes complete evolving user histories with identifiers removed; full-history duplication is the leakage-relevant diagnostic.'
