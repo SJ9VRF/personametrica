@@ -553,8 +553,8 @@
     },
     {
       "path": "data/reviewer_demo.json",
-      "bytes": 1388,
-      "sha256": "2b27d30909d377be2c3b174043ebd068267d5e593e225cbc0ab737bf5d49cac1"
+      "bytes": 1361,
+      "sha256": "3ec059dfb128f299fd1a5de4e55ea7a7eaa74a6eb1e4a446489f1bfaf3ce55b0"
     },
     {
       "path": "data/reward_baseline_results.json",
@@ -1848,8 +1848,8 @@
     },
     {
       "path": "scripts/reviewer_demo.py",
-      "bytes": 5619,
-      "sha256": "a785a008b889548f47601169988df57513b7d3b9629a4482c14ef06c3ded7943"
+      "bytes": 5656,
+      "sha256": "d1f135adc1e655d535935a1f3d7c07beea6f7e652bf62576701443fdcc9efd08"
     },
     {
       "path": "scripts/reward_generalization_eval.py",
